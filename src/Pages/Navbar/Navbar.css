@@ -1,0 +1,22 @@
+.header{
+   z-index: 9999;
+   padding-top: 200px;
+}
+
+.active {
+    background-color: tomato;
+    border-radius: 0px;
+}
+
+.header{
+   padding-top: 3px;
+   padding-bottom: 0px;
+}
+
+.header a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.header a:hover {
+}

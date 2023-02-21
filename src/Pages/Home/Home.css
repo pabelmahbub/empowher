@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 5%;
+    margin-left:5%;
+    background-color: #6B728E;
+    width: "100%";
+  }
+  
+  .item {
+    flex-grow: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .textBox{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }

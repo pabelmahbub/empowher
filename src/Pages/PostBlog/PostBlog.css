@@ -1,0 +1,51 @@
+.add-service {
+    background-color: rgb(111, 153, 159);
+    padding-bottom: 50px;
+
+}
+
+.add-service form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-service form input,textarea{
+    width: 65%;
+    border-radius: 4px;
+    margin: 10px;
+    padding:10px
+}
+
+.add-service submit{
+    width: 35%;
+    margin: 10px;
+    padding:7px
+}
+
+.titleStyle {
+    font-size:32px;
+    padding-top: 50px;
+    color:#fff;
+    text-align: center;
+    font-weight: 800 ;
+}
+
+.bottomText {
+    font-size:22px;
+    color:#fff;
+    text-align: center;
+    font-weight: 400 ;
+}
+
+.bottomText1 {
+    font-size:22px;
+    color:#000;
+    text-align: center;
+    font-weight: 400 ;
+}
+
+.title {
+    font-family: raleway;
+    color: #fff
+}
