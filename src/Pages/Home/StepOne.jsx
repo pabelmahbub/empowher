@@ -6,22 +6,22 @@ import m5 from '../../Assets/32.webp'
 function StepOne() {
   const services = [{
     _id: 1,
-    name: 'How to do Self heiy babbe Development?',
+    name: 'Violence and oppression directed against women',
     
   },
   {
     _id: 2,
-    name: 'How we grow in life humann man trafficking?',
+    name: 'Less wage for women in workplace',
     
   },
   {
     _id: 3,
-    name: 'How we learned human trafficking?',
+    name: 'Freedom of voice and freedom to grow',
    
   },
   {
     _id: 4,
-    name: 'Message for my younger one human',
+    name: 'Having no right to express opinion',
    
   },
   ]

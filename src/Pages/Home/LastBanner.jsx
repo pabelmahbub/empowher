@@ -11,7 +11,7 @@ function LastBanner() {
         </div>
             <div className="hero-content text-center text-neutral-content">
                  <div style={{marginTop:"-450px"}}>
-                    <h1 className="mb-5 text-5xl font-bold">"Learn as if you will live forever"</h1>
+                    <h1 className="mb-5 text-4xl font-bold">"Think like a queen. A queen is not afraid to fail."</h1>
                     <button style={{borderRadius:'0px'}} className="btn btn-outline btn-info px-12">Read More</button>
                  </div>
             </div>

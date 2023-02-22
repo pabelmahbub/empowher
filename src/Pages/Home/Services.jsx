@@ -13,7 +13,7 @@ function Services() {
     _id: 1,
     name: 'Who we are',
     img: a4,
-    description: "Since 1961, we’ve been helping people claim their rights across the world.",
+    description: "we’ve been helping people claim their rights across the world.",
     myText:"Read Our story"
     
   },
@@ -21,7 +21,7 @@ function Services() {
     _id: 2,
     name: 'what we do',
     img: a2,
-    description: "Since 1961, we’ve been helping people claim their rights across the world.",
+    description: "we’ve been helping people claim their rights across the world.",
     myText:"Browse the Issues"
     
   },
@@ -29,7 +29,7 @@ function Services() {
     _id: 3,
     name: 'Get involved',
     img: a1,
-    description: "Since 1961, we’ve been helping people claim their rights across the world.",
+    description: "we’ve been helping people claim their rights across the world.",
     myText:"Take Action"
    
   },

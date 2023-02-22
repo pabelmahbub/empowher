@@ -34,3 +34,12 @@
     background-color: tomato;
     color: #fff;
   }
+
+  .imageText{
+    font-family:monospace;
+    margin-left:40px;
+    position:absolute;
+    color:#fff;
+    margin-top:150px;
+    background-color:#6B728E
+  }
