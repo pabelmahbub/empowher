@@ -23,7 +23,7 @@ function Navbar() {
         <li><NavLink to='/development'>Development</NavLink></li>
       </ul>
     </div>
-    <Link to='/' className="btn btn-ghost normal-case text-4xl" style={{fontFamily:'inherit', color:'tomato',fontWeight:900}}>Empow(h)er</Link>
+    <Link to='/' className="btn btn-ghost normal-case text-5xl" style={{fontFamily:'inherit', color:'tomato',fontWeight:900}}>Empow(h)er</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

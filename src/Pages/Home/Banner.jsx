@@ -13,7 +13,7 @@ function Banner() {
 
     <div className="hero min-h-screen" style={{ backgroundImage: `url(${m5})`, height:400 }}>
  <div className="hero-overlay bg-opacity-10">
- <h1  className=" imageText mb-8 text-4xl font-bold px-6 py-2">[Women Empowerment]</h1>
+ <h1  style={{fontFamily:'inherit'}}className=" imageText mb-8 text-4xl font-bold px-6 py-2">[Women Empowerment]</h1>
  </div>
  <div className="hero-content text-center text-neutral-content">
    <div className="max-w-md">

@@ -3,6 +3,7 @@ import MainLayout from '../layout/MainLayout';
 import Development from '../Pages/Development/Development';
 import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
+import NotFound from '../Pages/NotFound/NotFound';
 import PostBlog from '../Pages/PostBlog/PostBlog';
 import SignUp from '../Pages/SignUp/SignUp';
 // import About from '../About/About';
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
       {path: "development",element: <Development />},
       {path: "login",element: <Login />},
       {path: "signup",element: <SignUp />},
+      {path: "*",element: <NotFound />},
 
     //   {
     //     path: "friends",
