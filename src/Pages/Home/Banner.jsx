@@ -1,5 +1,5 @@
 import React from 'react'
-import m5 from '../../Assets/53.avif';
+import m5 from '../../Assets/images/69.webp';
 import './Home.css';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 

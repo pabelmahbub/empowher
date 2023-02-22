@@ -20,7 +20,7 @@ function Services() {
   {
     _id: 2,
     name: 'what we do',
-    img: a2,
+    img: a3,
     description: "we’ve been helping people claim their rights across the world.",
     myText:"Browse the Issues"
     

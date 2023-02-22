@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
-import m5 from '../../Assets/32.webp'
+import m5 from '../../Assets/images/65.webp'
 
 function StepOne() {
   const services = [{

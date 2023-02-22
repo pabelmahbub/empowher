@@ -1,72 +1,50 @@
+import axios from 'axios';
 import React, { useState } from 'react';
+import { useForm } from "react-hook-form";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 
 function Development() {
-  const [value, setValue] = useState('');
-  console.log(value);
+    const [editorValue, setEditorValue] = useState('');
+    const [dataValue, setDataValue] = useState('');
+
+  const handleEditorChange = (value) => {
+    setEditorValue(value);
+  };
+
+  const handleDataChange = (event) => {
+    setDataValue(event.target.value);
+  };
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = { editor: editorValue, data: dataValue };
+    try {
+      const response = await axios.post('https://empower-server-production.up.railway.app/addBlog', formData);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+
+
+
   return (
-    <div className='add'>
+    <div className='add-service'>
 
-     <div className="content">
-       <input type="text" placeholder='Title' />
-       <div className="editorContainer">
-       <ReactQuill className="editor" theme="snow" value={value} onChange={setValue} />
-       </div>
-     </div>
-
-     <div className="menu">
-        <div className="item">
-          {/* <h1>Publish</h1> */}
-          <span>
-           {/* <b>Status :</b> Draft */}
-          </span>
-          <span>
-           {/* <b>Visibility :</b> Public */}
-          </span>
-          <input style={{display:"none"}} type="file" name="" id ="file" />
-          {/* <label className="file" htmlFor='file'>Upload Image</label> */}
-          <div className="button">
-           {/* <button>Save as a draft</button>
-           <button>Update</button> */}
+       <form onSubmit={handleSubmit}>
+          <div style={{height:'300px',width:'400px',backgroundColor:'#fff',marginTop:'40px'}} >
+             <ReactQuill value={editorValue} onChange={handleEditorChange} />
           </div>
-        </div>
-        {/* <div className="item">
-          <h1>Category</h1>
+             <input type="text" value={dataValue} onChange={handleDataChange} style={{marginTop:'20px',fontWeight:'bold', width:'400px',}} placeholder='Date *'/>
+             {/* <button type="submit">Submit</button> */}
+             <input style={{backgroundColor:'salmon', color:'#fff',fontWeight:'bold',width:'30%'}}type="submit" />
+       </form>
 
-            <div className="cat">
-            <input type="radio" name="cat"  value="art" id ="art" />
-            <label htmlFor='art'>Art</label>
-            </div>
-
-            <div className="cat">
-            <input type="radio" name="cat"  value="science" id ="science" />
-            <label htmlFor='science'>Science</label>
-            </div>
-
-            <div className="cat">
-            <input type="radio" name="cat"  value="technology" id ="technology" />
-            <label htmlFor='technology'>Technology</label>
-            </div>
-
-            <div className="cat">
-            <input type="radio" name="cat"  value="cinema" id ="cinema" />
-            <label htmlFor='cinema'>Cinema</label>
-            </div>
-
-            <div className="cat">
-            <input type="radio" name="cat"  value="design" id ="design" />
-            <label htmlFor='design'>Design</label>
-            </div>
-
-            <div className="cat">
-            <input type="radio" name="cat"  value="food" id ="food" />
-            <label htmlFor='food'>Food</label>
-            </div>
-            
-        </div> */}
      </div>
-    </div>
+
   )
 }
 

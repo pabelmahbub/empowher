@@ -1,5 +1,6 @@
 import React from 'react'
-import m5 from '../../Assets/24.webp'
+
+import m5 from '../../Assets/31.webp'
 import { Link } from 'react-router-dom';
 
 

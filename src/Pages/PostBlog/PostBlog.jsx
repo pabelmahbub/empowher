@@ -9,11 +9,11 @@ function PostBlog() {
          const { register, handleSubmit,reset } = useForm();
          const onSubmit = data => {
                      console.log(data);
-                     axios.post('https://riz-corpo-server-production.up.railway.app/addMovie', data)
+                     axios.post('https://empower-server-production.up.railway.app/addBlog', data)
                      .then(res=>{
                               console.log(res);
                               if(res.data.insertedId){
-                                alert('Transaction data added successfully');
+                                alert('Blog is  added successfully');
                                 reset();
                               }
                      })
