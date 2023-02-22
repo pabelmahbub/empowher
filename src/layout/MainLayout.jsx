@@ -1,6 +1,5 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Step1 from '../InitialSteps/Step1'
 import Footer from '../Pages/Footer/Footer'
 import Navbar from '../Pages/Navbar/Navbar'
 //import Header from '../components/Header/Header'

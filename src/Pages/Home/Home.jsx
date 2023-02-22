@@ -4,6 +4,8 @@ import Footer from '../Footer/Footer';
 import Banner from './Banner';
 import StepOne from './StepOne';
 import Services from './Services';
+import ImagesCards from './ImagesCards';
+import LastBanner from './LastBanner';
 
 function Home() {
   return (
@@ -11,6 +13,8 @@ function Home() {
       <Banner />
       <StepOne />
       <Services />
+      <ImagesCards />
+      <LastBanner />
     </div>
   )
 }

@@ -1,6 +1,9 @@
 import React from 'react'
 import Service from './Service';
-import a1 from '../../Assets/a1.avif'
+import a1 from '../../Assets/22.webp';
+import a2 from '../../Assets/31.webp'
+import a3 from '../../Assets/24.webp'
+import a4 from '../../Assets/25.webp'
 // import fluoride from '../../assets/images/fluoride.png';
 // import cavity from '../../assets/images/cavity.png';
 // import whitening from '../../assets/images/whitening.png';
@@ -9,17 +12,17 @@ function Services() {
   const services = [{
     _id: 1,
     name: 'Who we are',
-    img: a1,
+    img: a4,
     description: "Since 1961, we’ve been helping people claim their rights across the world.",
-    myText:"Read full story"
+    myText:"Read Our story"
     
   },
   {
     _id: 2,
     name: 'what we do',
-    img: a1,
+    img: a2,
     description: "Since 1961, we’ve been helping people claim their rights across the world.",
-    myText:"Read full story"
+    myText:"Browse the Issues"
     
   },
   {
@@ -27,7 +30,7 @@ function Services() {
     name: 'Get involved',
     img: a1,
     description: "Since 1961, we’ve been helping people claim their rights across the world.",
-    myText:"Read full story"
+    myText:"Take Action"
    
   },
   ]

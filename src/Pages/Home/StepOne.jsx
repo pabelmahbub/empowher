@@ -1,29 +1,47 @@
 import React from 'react';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
-import m5 from '../../Assets/13.avif'
+import m5 from '../../Assets/32.webp'
 
 function StepOne() {
+  const services = [{
+    _id: 1,
+    name: 'How to do Self heiy babbe Development?',
+    
+  },
+  {
+    _id: 2,
+    name: 'How we grow in life humann man trafficking?',
+    
+  },
+  {
+    _id: 3,
+    name: 'How we learned human trafficking?',
+   
+  },
+  {
+    _id: 4,
+    name: 'Message for my younger one human',
+   
+  },
+  ]
   return (
     <>
-     <h1 className="text-3xl font-bold mt-24 mb-6">WOMEN’S RIGHTS ARE HUMAN RIGHTS!</h1>
+     <h1 className="lg:text-3xl sm:text-xl font-bold mt-24 mb-3 text-center lg:mb-[-80px]">WOMEN’S RIGHTS ARE HUMAN RIGHTS!</h1>
     
     
    
-        <div className="hero min-h-screen">
+        <div className="hero min-h-screen"> 
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src={m5} width='800px' className="lg:max-w-lg md:max-w-md sm:max-w-sm rounded-lg shadow-2xl" />
+    <img src={m5} className="h-96"/>
     <div>
       
-      <p className="py-6 text-xl">We are all entitled to human rights. These include the right to live free from violence and discrimination; to enjoy the highest attainable standard of physical and mental health; to be educated; to own property; to vote; and to earn an equal wage.<br/><br/>
-
-But across the globe many women and girls still face discrimination on the basis of sex and gender. Gender inequality underpins many problems which disproportionately affect women and girls, such as domestic and sexual violence, lower pay, lack of access to education, and inadequate healthcare.<br/><br/>
-
-For many years women’s rights movements have fought hard to address this inequality, campaigning to change laws or taking to the streets to demand their rights are respected. And new movements have flourished in the digital age, such as the #MeToo campaign which highlights the prevalence of gender-based violence and sexual harassment.
-
-Through research, advocacy and campaigning, Amnesty International pressures the people in power to respect women’s rights. <br/><br/>
-
-On this page we look at the history of women’s rights, what women’s rights actually are, and what Amnesty is doing.</p>
+    <div>
+                    <p className='pt-3' style={{fontSize:'17px',fontWeight:'700'}}>Empow(h)er! <span style={{color:'#0096FF'}}>What Is Our Motto?</span></p>
+                    <p className='pt-3' style={{fontSize:'16px'}}>Violence and oppression directed against women in developing countries is extensive and is often encouraged or legitimized by religious and cultural beliefs and practices <span style={{color:'#0096FF'}}>Terms of Use </span>for more details.</p>
+                    <p className='pt-3' style={{fontSize:'16px'}}>“What was previously bad is now worse with the COVID-19 pandemic which has resulted in unintended pregnancies, and new barriers to health access along with job and education losses.”</p>
+                    <p className='pt-3' style={{fontSize:'16px'}}>“Gender inequality is the most insidious and pervasive impediment to <span style={{color:'#0096FF'}}>bodily autonomy</span>. It starts from the cradle,” Kanem, a paediatrician and epidemiologist, told reporters in an online media briefing."</p>
+                </div>
       
     </div>
   </div>
@@ -38,7 +56,7 @@ On this page we look at the history of women’s rights, what women’s rights a
 </div> */}
 
 
-<div className="container">
+{/* <div className="container">
 <div className="item">
 
   <div style={{borderColor:'#fff', borderWidth:1, marginRight:'6%'}}><p className='textBox text-xl text-white px-1'>What are we fighting for</p></div>
@@ -51,7 +69,7 @@ On this page we look at the history of women’s rights, what women’s rights a
 
 <div className="item">
 
-    <div style={{borderColor:'#fff', borderWidth:1,marginRight:'6%'}}><p className='textBox text-xl text-white px-1'>What are we fighting for being violated</p></div>
+    <div style={{borderColor:'#fff', borderWidth:1,marginRight:'6%'}}><p className='textBox text-xl text-white px-1'>What are we fighting for bei</p></div>
 </div>
 
 <div className="item">
@@ -59,7 +77,28 @@ On this page we look at the history of women’s rights, what women’s rights a
     <div style={{borderColor:'#fff', borderWidth:1}}><p className='textBox text-xl  text-white px-1'>What are we fighting for</p></div>
 </div>
 
+</div> */}
+
+
+<div  className="bigBox grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  gap-5 px-5 py-5">
+{
+          services.map(service => 
+       <div className="boxContainer card lg:card-side bg-base-100 shadow-xl">
+          <div className="">
+          <h2 className="text-xl pl-3 pr-2 py-3">{service.name}</h2>
+   
+       </div>
 </div>
+)
+}
+
+
+      
+    </div>
+
+
+
+
 </>
   )
 }

@@ -2,7 +2,9 @@ import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
 import Development from '../Pages/Development/Development';
 import Home from '../Pages/Home/Home';
+import Login from '../Pages/Login/Login';
 import PostBlog from '../Pages/PostBlog/PostBlog';
+import SignUp from '../Pages/SignUp/SignUp';
 // import About from '../About/About';
 // import MainLayout from "../../layout/MainLayout";
 // import Friends from '../Friends/Friends';
@@ -21,6 +23,8 @@ export const router = createBrowserRouter([
       {path: "/home", element: <Home />},
       {path: "postBlog",element: <PostBlog />},
       {path: "development",element: <Development />},
+      {path: "login",element: <Login />},
+      {path: "signup",element: <SignUp />},
 
     //   {
     //     path: "friends",

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.css';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -23,7 +23,7 @@ function Navbar() {
         <li><NavLink to='/development'>Development</NavLink></li>
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-xl">eMPOWHEr</a>
+    <Link to='/' className="btn btn-ghost normal-case text-4xl" style={{fontFamily:'fantasy', color:'tomato',fontWeight:900}}>Empow(h)er</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -32,12 +32,12 @@ function Navbar() {
             } to='/home'>Home</NavLink></li>
        
         <li><NavLink to='/postBlog'>Post Blog</NavLink></li>
-        <li><NavLink to='/'>Blog</NavLink></li>
+        <li><NavLink to='/login'>Blog</NavLink></li>
         <li><NavLink to='/development'>Development</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Let's Start!</a>
+    <NavLink to='/signup' className="btn" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink>
   </div>
 </div>
 
