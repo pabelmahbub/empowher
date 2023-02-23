@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
-import m5 from '../../Assets/images/65.webp'
+import m5 from '../../Assets/images/67.webp'
 
 function StepOne() {
   const services = [{
@@ -27,20 +27,20 @@ function StepOne() {
   ]
   return (
     <>
-     <h1 className="lg:text-3xl sm:text-xl font-bold mt-24 mb-3 text-center lg:mb-[-80px]">WOMEN’S RIGHTS ARE HUMAN RIGHTS!</h1>
+     <h1 className="lg:text-4xl font-bold mt-24 mb-3 text-center lg:mb-[-80px]">WOMEN’S RIGHTS ARE HUMAN RIGHTS!</h1>
     
     
    
         <div className="hero min-h-screen"> 
   <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src={m5} className="h-96"/>
+    <img src={m5} className="h-72"/>
     <div>
       
     <div>
-                    <p className='pt-3' style={{fontSize:'17px',fontWeight:'700'}}>Empow(h)er! <span style={{color:'#0096FF'}}>What Is Our Motto?</span></p>
-                    <p className='pt-3' style={{fontSize:'16px'}}>Violence and oppression directed against women in developing countries is extensive and is often encouraged or legitimized by religious and cultural beliefs and practices <span style={{color:'#0096FF'}}>Terms of Use </span>for more details.</p>
-                    <p className='pt-3' style={{fontSize:'16px'}}>“What was previously bad is now worse with the COVID-19 pandemic which has resulted in unintended pregnancies, and new barriers to health access along with job and education losses.”</p>
-                    <p className='pt-3' style={{fontSize:'16px'}}>“Gender inequality is the most insidious and pervasive impediment to <span style={{color:'#0096FF'}}>bodily autonomy</span>. It starts from the cradle,” Kanem, a paediatrician and epidemiologist, told reporters in an online media briefing."</p>
+                    <p className='pt-3' style={{fontSize:'19px',fontWeight:'700',fontFamily:'raleway'}}>Empow(h)er! <span style={{color:'#0096FF'}}>What Is Our Motto?</span></p>
+                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>Violence and oppression directed against women in developing countries is extensive and is often encouraged or legitimized by religious and cultural beliefs and practices <span style={{color:'#0096FF'}}>Terms of Use </span>for more details.</p>
+                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>“What was previously bad is now worse with the COVID-19 pandemic which has resulted in unintended pregnancies, and new barriers to health access along with job and education losses.”</p>
+                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>“Gender inequality is the most insidious and pervasive impediment to <span style={{color:'#0096FF'}}>bodily autonomy</span>. It starts from the cradle,” Kanem, a paediatrician and epidemiologist, told reporters in an online media briefing."</p>
                 </div>
       
     </div>
@@ -85,7 +85,7 @@ function StepOne() {
           services.map(service => 
        <div className="boxContainer card lg:card-side bg-base-100 shadow-xl">
           <div className="">
-          <h2 className="text-xl pl-3 pr-2 py-3">{service.name}</h2>
+          <h2 style={{fontFamily:'raleway'}} className="text-xl pl-3 pr-2 py-3">{service.name}</h2>
    
        </div>
 </div>

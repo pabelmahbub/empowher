@@ -43,10 +43,10 @@ function ImagesCards() {
 {
           services.map(service => 
        <div style={{alignItems:'center'}} className="card lg:card-side bg-base-100 shadow-xl">
-  <img src={service.img} style={{height:'350px', width:'400px',objectFit:'fill'}} alt="Album"/>
-  <div className="card-body">
-    <h2 className="px-6 card-title">{service.name}</h2>
-    <p className='px-6 text-sm'>{service.description}</p>
+         <img src={service.img} style={{height:'350px', width:'400px',objectFit:'fill'}} alt="Album"/>
+          <div className="card-body">
+            <h2 style={{fontFamily:'raleway'}} className="px-6 card-title">{service.name}</h2>
+            <p style={{fontFamily:'raleway'}} className='px-6 text-sm'>{service.description}</p>
    
   </div>
 </div>

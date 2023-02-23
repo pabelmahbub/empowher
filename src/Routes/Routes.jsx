@@ -1,5 +1,7 @@
 import { createBrowserRouter } from 'react-router-dom';
 import MainLayout from '../layout/MainLayout';
+import Blog from '../Pages/Blog/Blog';
+import BlogDetail from '../Pages/Blog/BlogDetail';
 import Development from '../Pages/Development/Development';
 import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
@@ -28,12 +30,7 @@ export const router = createBrowserRouter([
       {path: "signup",element: <SignUp />},
       {path: "*",element: <NotFound />},
 
-    //   {
-    //     path: "friends",
-    //     loader: async () => { 
-    //       return fetch('https://jsonplaceholder.typicode.com/users');
-    //     },
-    //     element: <Friends />},
+       
 
     //     {
     //       path: "posts",
@@ -49,6 +46,19 @@ export const router = createBrowserRouter([
     //         element: <Countries />},
       
     ]},
+    {
+      path: "blogs",
+      loader: async () => { 
+        return fetch('https://empower-server-production.up.railway.app/blogs');
+      },
+      element: <Blog />},
+
+      {
+        path: "/blogs/:id",
+        
+        element: <BlogDetail />},
+
+
 
 
     // {

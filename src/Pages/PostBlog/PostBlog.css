@@ -24,18 +24,20 @@
 }
 
 .titleStyle {
-    font-size:32px;
+    font-size:33px;
     padding-top: 50px;
     color:#fff;
     text-align: center;
     font-weight: 800 ;
+    font-family: raleway;
 }
 
 .bottomText {
     font-size:22px;
     color:#fff;
     text-align: center;
-    font-weight: 400 ;
+    font-weight: 700 ;
+    font-family: raleway;
 }
 
 .bottomText1 {
