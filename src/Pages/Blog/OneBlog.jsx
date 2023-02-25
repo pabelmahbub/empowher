@@ -25,7 +25,6 @@ function OneBlog({ blog }) {
       <div className="badge badge-warning">NEW</div>
       
     </h2>
-         <p>Title of my one minute interview: <span style={{color:'#fff', fontWeight:700}}>{Title}</span></p>
          <p>I am <span style={{color:'#fff', fontWeight:700}}>{Name}, {Old}</span>  years old.</p>
          <p> Location: <span style={{color:'#fff', fontWeight:700}}>{Location}</span></p>
          <p>Importance of education(to eliminate gender inequality)? <span style={{color:'#fff', fontWeight:700}}>{Education}</span></p>

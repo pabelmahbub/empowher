@@ -19,7 +19,7 @@ function Navbar() {
             } to='/home' style={{fontFamily:'raleway'}}>Home</NavLink></li>
        
         <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
-        <li><NavLink to='/blogs' style={{fontFamily:'raleway'}}> Blog</NavLink></li>
+        <li><NavLink to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
         <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life advice</NavLink></li>
       </ul>
     </div>
@@ -32,7 +32,7 @@ function Navbar() {
             } to='/home'>Home</NavLink></li>
        
        <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
-        <li><NavLink to='/blogs' style={{fontFamily:'raleway'}}>Blog</NavLink></li>
+        <li><NavLink to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
         <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life advice</NavLink></li>
     </ul>
   </div>

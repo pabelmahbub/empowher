@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useLoaderData, useParams } from 'react-router-dom'
+import Blog from './Blog';
 
 function BlogDetail() {
     const [data, setData] = useState([])
@@ -11,12 +12,41 @@ function BlogDetail() {
       .then(json => setData(json))
 
   return (
+    <>
     <div>
-      <h2>{data.Date}</h2>
-      <h2>{data.Title}</h2>
-      <h2>{data.Name}</h2>
+      
+      <div className="hero min-h-screen bg-base-200">
+  <div className="hero-content flex-col lg:flex-row">
+    <img src={data.Image} className="lg:max-w-lg md:max-w-md sm:max-w-sm rounded-lg shadow-2xl" />
+    <div>
+      <h1 className="text-4xl font-bold blogDetail pb-3">Title: {data.Title}</h1>
+       <p className="text-2xl font-bold blogDetail pb-2">Hi, I am {data.Name}</p>
+       <p className="text-xl blogDetail">Location: {data.Location}</p>
+       <p className="text-xl blogDetail">I am {data.Old} years old.</p>
+       <p className="text-xl blogDetail pb-2">Importance of Education for a female is {data.Education} .</p>
+       {data.life && 
+       <p className="text-xl blogDetail">Women need more attention in {data.life} .</p>
+        } 
+       <p className="text-xl blogDetail">In my age I think about my life is {data.Feel} .</p>
+       <p className="text-xl blogDetail pb-3">{data.Society} under appreciated in society.</p>
+       <p className="text-xl blogDetail">People are unhappy in our surroundings because they are {data.Unhappy} .</p>
+       <p className="text-xl blogDetail">My advice for the younger self is {data.Advice} .</p>
+       {data.Story &&
+       <p className="text-xl blogDetail pb-3">My Story: {data.Story} .</p>
+       }
+       {data.Lesson && 
+       <p className="text-xl blogDetail">{data.Lesson} learned from my life.</p>
+       } 
+      {/* <button className="btn btn-primary">Get Started</button> */}
+    </div>
+  </div>
+</div>
+
+
+
 
     </div>
+    </>
   )
 }
 
