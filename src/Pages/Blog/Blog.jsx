@@ -44,7 +44,7 @@ function Blog() {
        
         <li><NavLink to='/postBlog'>One Min. Advice</NavLink></li>
         <li><NavLink to='/blogs'>Life Thinking</NavLink></li>
-        <li><NavLink to='/development'>Life Advice</NavLink></li>
+        <li><NavLink to='/development'>Life Story</NavLink></li>
       </ul>
     </div>
     <div className="navbar-center">

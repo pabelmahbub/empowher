@@ -1,6 +1,11 @@
 .add-service {
     background-color: rgb(111, 153, 159);
     padding-bottom: 50px;
+}
+
+.add-service1 {
+    background-color: rgb(111, 153, 159);
+    padding-bottom: 20px;
 
 }
 
@@ -27,6 +32,15 @@
     font-size:33px;
     padding-top: 50px;
     color:#fff;
+    text-align: center;
+    font-weight: 800 ;
+    font-family: raleway;
+}
+
+.titleStyle1 {
+    font-size:33px;
+    padding-top: 50px;
+    color:#888;
     text-align: center;
     font-weight: 800 ;
     font-family: raleway;

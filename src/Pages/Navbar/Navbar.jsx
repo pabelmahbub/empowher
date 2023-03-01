@@ -20,7 +20,8 @@ function Navbar() {
        
         <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
         <li><NavLink to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
-        <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life advice</NavLink></li>
+        <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
+        <li><NavLink to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
       </ul>
     </div>
     <Link to='/' className="btn btn-ghost normal-case lg:text-3xl sm:text-xl" style={{fontFamily:'raleway', color:'tomato',fontWeight:900}}>Empow(h)er</Link>
@@ -33,7 +34,8 @@ function Navbar() {
        
        <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
         <li><NavLink to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
-        <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life advice</NavLink></li>
+        <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
+        <li><NavLink to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
     </ul>
   </div>
   <div className="navbar-end">

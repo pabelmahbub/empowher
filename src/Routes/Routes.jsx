@@ -3,6 +3,7 @@ import MainLayout from '../layout/MainLayout';
 import Blog from '../Pages/Blog/Blog';
 import BlogDetail from '../Pages/Blog/BlogDetail';
 import Development from '../Pages/Development/Development';
+import DevelopmentBlog from '../Pages/Development/DevelopmentBlog';
 import Home from '../Pages/Home/Home';
 import Login from '../Pages/Login/Login';
 import NotFound from '../Pages/NotFound/NotFound';
@@ -52,6 +53,13 @@ export const router = createBrowserRouter([
         return fetch('https://empower-server-production.up.railway.app/blogs');
       },
       element: <Blog />},
+
+      {
+        path: "singleBlog",
+        loader: async () => { 
+          return fetch('https://empower-server-production.up.railway.app/singleBlog');
+        },
+        element: <DevelopmentBlog />},
 
       {
         path: "/blogs/:id",
