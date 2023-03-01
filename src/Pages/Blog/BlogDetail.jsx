@@ -23,7 +23,7 @@ function BlogDetail() {
        <p className="text-2xl font-bold blogDetail pb-2">Hi, I am {data.Name}</p>
        <p className="text-xl blogDetail">Location: {data.Location}</p>
        <p className="text-xl blogDetail">I am {data.Old} years old.</p>
-       <p className="text-xl blogDetail pb-2">Importance of Education for a female is {data.Education} .</p>
+       <p className="text-xl blogDetail pb-2">In my surroundings educated female child-  {data.Education} .</p>
        {data.life && 
        <p className="text-xl blogDetail">Women need more attention in {data.life} .</p>
         } 

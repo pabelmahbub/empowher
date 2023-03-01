@@ -37,7 +37,7 @@ function Blog() {
       <label tabIndex={0} className="btn btn-ghost btn-circle">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
       </label>
-      <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+      <ul style={{backgroundColor:'#fff',width:'200px',marginTop:''}} tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2">
       <li><NavLink className={({ isActive }) =>
               isActive ? "active" : undefined
             } to='/home'>Home</NavLink></li>
@@ -48,24 +48,22 @@ function Blog() {
       </ul>
     </div>
     <div className="navbar-center">
-    <Link to='/' className="btn btn-ghost normal-case lg:text-3xl sm:text-xl" style={{fontFamily:'raleway', color:'tomato',fontWeight:900}}>Empow(h)er</Link>
+    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'35px', color:'tomato',fontWeight:900}}>Voice</Link>
   </div>
   </div>
   
 
-  <div className="flex-none gap-2">
-    <div className="form-control">
-      <input type="text" placeholder="Search" style={{borderRadius:'0px'}} className="input input-bordered w-2/3 md:mr-10" 
+  <div className="flex-none">
+      <input type="text" placeholder="Search" style={{borderRadius:'0px'}} className="input input-bordered w-2/4 mr-10" 
       onChange={handleSearch}
       />
-    </div>
-    <div className="dropdown dropdown-end">
-        <Link to='/postBlog'>
+
+      <Link to='/postBlog'>
       <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <button style={{borderRadius:'0px'}} className="btn btn-outline btn-info lg:mr-16 md:mr-24">Create Post</button>
+          <button style={{borderRadius:'0px',padding:'5px'}} className="btn btn-outline btn-info">Create Post</button>
       </label>
       </Link>
-    </div>
+   
   </div>
 </div>
     
@@ -74,7 +72,7 @@ function Blog() {
 
    
     <div class="my-10 mx-5 mb-36">
-    <h2 style={{color:'#000',fontFamily:'raleway', fontWeight:700,textAlign:'center',fontSize:'27px', paddingBottom:'20px'}}>My Life Thinking/ Advice to my younger self: </h2>
+    <h2 style={{color:'#000',fontFamily:'raleway', fontWeight:700,textAlign:'center',fontSize:'28px', paddingBottom:'20px'}}>My Life Thinking/ Advice to my younger self: </h2>
 
       <div style={{backgroundColor:''}} className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
 

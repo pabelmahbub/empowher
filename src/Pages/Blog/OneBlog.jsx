@@ -27,7 +27,7 @@ function OneBlog({ blog }) {
     </h2>
          <p>I am <span style={{color:'#fff', fontWeight:700}}>{Name}, {Old}</span>  years old.</p>
          <p> Location: <span style={{color:'#fff', fontWeight:700}}>{Location}</span></p>
-         <p>Importance of education(to eliminate gender inequality)? <span style={{color:'#fff', fontWeight:700}}>{Education}</span></p>
+         <p>In my surroundings educated female child-  <span style={{color:'#fff', fontWeight:700}}>{Education}</span></p>
          <p>Which area women need more attention? <span style={{color:'#fff', fontWeight:700}}>{Life}</span></p>
          <p>My feel about society is: <span style={{color:'#fff', fontWeight:700}}>{Unhappy}</span></p>
          <p>Any advice to anyone of your age?  - <span style={{color:'#fff', fontWeight:700}}>{Advice}</span> </p>

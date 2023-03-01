@@ -24,7 +24,7 @@ function Navbar() {
         <li><NavLink to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
       </ul>
     </div>
-    <Link to='/' className="btn btn-ghost normal-case lg:text-3xl sm:text-xl" style={{fontFamily:'raleway', color:'tomato',fontWeight:900}}>Empow(h)er</Link>
+    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'40px', color:'tomato',fontWeight:900}}>V<span style={{textDecoration:'underline',fontSize:"30px"}}>oice</span></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
-import m5 from '../../Assets/images/67.webp'
+import m5 from '../../Assets/images/66.webp'
 
 function StepOne() {
   const services = [{
@@ -37,7 +37,7 @@ function StepOne() {
     <div>
       
     <div>
-                    <p className='pt-3' style={{fontSize:'19px',fontWeight:'700',fontFamily:'raleway'}}>Empow(h)er! <span style={{color:'#0096FF'}}>What Is Our Motto?</span></p>
+                    <p className='pt-3' style={{fontSize:'19px',fontWeight:'700',fontFamily:'raleway'}}>Voice! <span style={{color:'#0096FF'}}>What Is Our Motto?</span></p>
                     <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>Violence and oppression directed against women in developing countries is extensive and is often encouraged or legitimized by religious and cultural beliefs and practices <span style={{color:'#0096FF'}}>Terms of Use </span>for more details.</p>
                     <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>“What was previously bad is now worse with the COVID-19 pandemic which has resulted in unintended pregnancies, and new barriers to health access along with job and education losses.”</p>
                     <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>“Gender inequality is the most insidious and pervasive impediment to <span style={{color:'#0096FF'}}>bodily autonomy</span>. It starts from the cradle,” Kanem, a paediatrician and epidemiologist, told reporters in an online media briefing."</p>

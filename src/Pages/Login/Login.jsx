@@ -63,7 +63,7 @@ function Login() {
                     <input style={{borderRadius:'4px'}} className="btn button text-transform:capitalize" type="submit" value="login" />
                   </div>
                 </form>
-                <p className='pt-2 pb-4 text-center'>New to Empow(h)er? <Link to='/signup' className='text-orange-600 font-bold'>SignUp</Link></p>
+                <p className='pt-2 pb-4 text-center'>New to Voice? <Link to='/signup' className='text-orange-600 font-bold'>SignUp</Link></p>
               </div>
             </div>
           </div>

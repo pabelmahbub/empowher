@@ -22,7 +22,7 @@ function PostBlog() {
   return (
     <>
    <div className='add-service'>
-      <h1 className='titleStyle'><span className='title'>Empow(h)er</span></h1>
+      <h1 className='titleStyle'><span className='title'>Voice</span></h1>
       <h1 className='bottomText mb-6'><span className='title'>13 Questions: 1 minute <br/>Suggestion/Advice To your younger one</span></h1>
          {/**React-hook-form */}
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -30,7 +30,7 @@ function PostBlog() {
       <input {...register("Name", { required: true, maxLength: 50 })} placeholder='Name / Pseudo Name *'/>
       <input {...register("Location", { required: true, maxLength: 500 })} placeholder='Your Location *'/>
       <input {...register("Old", { required: true, maxLength: 500 })} placeholder='How old are you? *'/>
-      <input {...register("Education", {  required: true, maxLength: 300 })} placeholder="Importance of education for a female child?(in percentage) *"/>
+      <input {...register("Education", {  required: true, maxLength: 300 })} placeholder="In your surroundings educated female child (in percentage)? *"/>
       <input {...register("Life", {  required: true, maxLength: 300 })} placeholder="Which areas women need more attention?*"/>
       <input {...register("Feel", { required: true, maxLength: 500 })} placeholder='what does it look like in your age about life? *'/>
       <input {...register("Society", { required: true, maxLength: 500 })} placeholder='what is one thing under appreciated in society? *'/>

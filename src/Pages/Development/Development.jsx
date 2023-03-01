@@ -58,7 +58,7 @@ function Development() {
        <h1 className='bottomText mb-6'><span className='title'>Tell us story of how you overcome obstacles.</span></h1>
 
        <form onSubmit={handleSubmit}>
-          <div style={{height:'500px',width:'60%',backgroundColor:'#fff',marginTop:'40px', overflow:'scroll'}} >
+          <div style={{height:'500px',width:'75%',backgroundColor:'#fff',marginTop:'40px', overflow:'scroll'}} >
              <ReactQuill value={editorValue} theme='snow' onChange={handleEditorChange} reset={reset}/>
           </div>
           <div style={{marginTop:'20px',fontWeight:'bold',borderRadius:'0px',width:'400px',textAlign:'center'}}>
