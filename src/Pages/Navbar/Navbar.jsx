@@ -1,10 +1,9 @@
 import React from 'react'
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
-import useAnalyticsEventTracker from "../../useAnalyticsEventTracker";
+
 
 function Navbar() {
-  const gaEventTracker = useAnalyticsEventTracker('Navbar');
   return (
     <div className='header'>
 
@@ -16,14 +15,14 @@ function Navbar() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
       </label>
       <ul style={{backgroundColor:'#fff',width:'200px',marginTop:''}} tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2">
-      <li><NavLink onClick={()=>gaEventTracker('home')} className={({ isActive }) =>
+      <li><NavLink className={({ isActive }) =>
               isActive ? "active" : undefined
             } to='/home' style={{fontFamily:'raleway'}}>Home</NavLink></li>
        
-        <li><NavLink onClick={()=>gaEventTracker('postBlog')} to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
-        <li><NavLink onClick={()=>gaEventTracker('blogs')} to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
-        <li><NavLink onClick={()=>gaEventTracker('development')} to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
-        <li><NavLink onClick={()=>gaEventTracker('singleBlog')} to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
+        <li><NavLink  to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
+        <li><NavLink  to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
+        <li><NavLink  to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
+        <li><NavLink  to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
       </ul>
     </div>
     <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'40px', color:'tomato',fontWeight:900}}>B<span style={{textDecoration:'underline',fontSize:"30px"}}>looms Girl</span></Link>
