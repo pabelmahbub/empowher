@@ -37,10 +37,10 @@ function StepOne() {
     <div>
       
     <div>
-                    <p className='pt-3' style={{fontSize:'19px',fontWeight:'700',fontFamily:'raleway'}}>Voice! <span style={{color:'#0096FF'}}>What Is Our Motto?</span></p>
-                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>Violence and oppression directed against women in developing countries is extensive and is often encouraged or legitimized by religious and cultural beliefs and practices <span style={{color:'#0096FF'}}>Terms of Use </span>for more details.</p>
-                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>“What was previously bad is now worse with the COVID-19 pandemic which has resulted in unintended pregnancies, and new barriers to health access along with job and education losses.”</p>
-                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>“Gender inequality is the most insidious and pervasive impediment to <span style={{color:'#0096FF'}}>bodily autonomy</span>. It starts from the cradle,” Kanem, a paediatrician and epidemiologist, told reporters in an online media briefing."</p>
+                    <p className='pt-3' style={{fontSize:'25px',fontWeight:'700',fontFamily:'raleway', color:'tomato'}}>Voice! <span style={{color:'#0096FF',fontSize:'19px'}}>What Is Our Motto?<a target="_blank" href="https://www.hrw.org/topic/womens-rights"></a></span></p>
+                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>Women's rights are a critical aspect of human rights that advocate for the  <span style={{color:'#0096FF'}}>equal treatment</span>and opportunities for women in all spheres of life.</p>
+                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}> This includes ensuring that women have equal access to education, employment, healthcare, and political representation, among others. </p>
+                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>The fight for women's rights has a long and complex history, characterized by various social, economic, and political movements. While progress has been made in some areas, such as increased access to education and employment opportunities, women still face significant challenges globally, including gender-based violence, unequal pay, and limited political representation. It is crucial to continue to work towards <span style={{color:'#0096FF'}}>gender equality </span>to ensure that women's rights are respected, protected, and fulfilled in every society.</p>
                 </div>
       
     </div>

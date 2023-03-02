@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import './Blog.css';
 import { Link, Navigate, NavLink, useLoaderData, useNavigate } from 'react-router-dom'
 import Footer from '../Footer/Footer';
 import OneBlog from './OneBlog';
@@ -8,10 +9,29 @@ function Blog() {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
 
+     //pagination 3 states
+    const [pageCount, setPageCount] = useState(0);
+    const [page, setPage] = useState(0);
+    const [size, setSize] = useState(6);
 
-    fetch(`https://empower-server-production.up.railway.app/blogs`)
+
+    useEffect(() => {
+    fetch(`https://empower-server-production.up.railway.app/blogs?page=${page}&size=${size}`)
       .then(response => response.json())
       .then(json => setBlogs(json))
+    }, [page,size])
+
+
+    useEffect(() => {
+      fetch('https://empower-server-production.up.railway.app/serviceCount')
+      .then(res=>res.json())
+      .then(data =>{
+          const count = data.count;
+          const pages = Math.ceil(count/4);
+          setPageCount(pages);
+      })
+  }, [])
+
 
     const navigate = useNavigate();
 
@@ -48,13 +68,13 @@ function Blog() {
       </ul>
     </div>
     <div className="navbar-center">
-    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'35px', color:'tomato',fontWeight:900}}>Voice</Link>
+    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'20px', color:'tomato',fontWeight:900}}>Voice</Link>
   </div>
   </div>
   
 
   <div className="flex-none">
-      <input type="text" placeholder="Search" style={{borderRadius:'0px'}} className="input input-bordered w-2/4 mr-10" 
+      <input type="text" placeholder="Search" style={{borderRadius:'0px'}} className="input input-bordered w-2/5 mr-10" 
       onChange={handleSearch}
       />
 
@@ -98,6 +118,27 @@ function Blog() {
 
 
       </div>
+
+      {/* pagination */}
+
+      <div className='pagination'>
+                    {
+                        [...Array(pageCount).keys()].map(number =><button
+                        className={page === number ? 'selected' : ''}
+                        onClick={()=>setPage(number)}
+                        >{number + 1}</button>)
+                    }
+                    <select className='selector' onChange={e=> setSize(e.target.value)}>
+                        <option value ='5'>5</option>
+                        <option value ='10' selected>10</option>
+                        <option value ='15'>15</option>
+                        <option value ='20'>20</option>
+                    </select>
+                </div>
+
+                {/* pagination */}
+
+
     </div>
    <Footer />
     </>

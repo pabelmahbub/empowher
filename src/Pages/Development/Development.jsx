@@ -5,6 +5,7 @@ import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { Navigate, useNavigate } from 'react-router-dom';
 
 function Development() {
     const [editorValue, setEditorValue] = useState('');
@@ -20,6 +21,7 @@ function Development() {
     setDataValue(event.target.value);
   };
 
+  const navigate = useNavigate();
 
   // const handleSubmit = async (event) => {
   //   event.preventDefault();
@@ -41,8 +43,8 @@ function Development() {
     .then(res=>{
              console.log(res);
              if(res.data.insertedId){
-               alert('My blog section is  added successfully');
-               formData.reset();
+               alert('Single blog section: Blog is  added successfully');
+               navigate('/singleBlog')
              }
     })
 };
@@ -57,9 +59,10 @@ function Development() {
 
        <h1 className='bottomText mb-6'><span className='title'>Tell us story of how you overcome obstacles.</span></h1>
 
+
        <form onSubmit={handleSubmit}>
-          <div style={{height:'500px',width:'75%',backgroundColor:'#fff',marginTop:'40px', overflow:'scroll'}} >
-             <ReactQuill value={editorValue} theme='snow' onChange={handleEditorChange} reset={reset}/>
+        <div style={{height:'500px',width:'90%',backgroundColor:'#fff',marginTop:'40px', overflow:'scroll'}}>
+             <ReactQuill value={editorValue} theme='snow' onChange={handleEditorChange} reset={reset} placeholder='Please write your name and start your story of how you did it!'/>
           </div>
           <div style={{marginTop:'20px',fontWeight:'bold',borderRadius:'0px',width:'400px',textAlign:'center'}}>
           {/* <input type="text" value={dataValue} onChange={handleDataChange} style={{marginTop:'20px',fontWeight:'bold', width:'300px',borderRadius:'0px'}} placeholder='Name *'/>  */}

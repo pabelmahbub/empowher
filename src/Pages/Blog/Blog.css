@@ -1,0 +1,41 @@
+/* pagination class */
+
+.pagination{
+    justify-content: center;
+    margin-top: 30px;
+    padding:10px;
+    text-align: center;
+}
+
+  .pagination button{
+    margin-right:8px;
+    padding-right:5px;
+    padding-left:5px;
+    border-radius: 3px;
+    background-color:white;
+    border:1px solid orange
+}
+.pagination .selected{
+    background-color: orange;
+    color:white;
+}
+
+.pagination .selector{
+    background-color: grey;
+    color:white;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 3px;
+}
+  
+  @media only screen and (max-width:688px){
+      .service-container{
+          grid-template-columns: repeat(1, 1fr);
+      }
+}
+
+@media only screen and (min-width:689px) and (max-width:991px){
+  .service-container{
+      grid-template-columns: repeat(2, 1fr);
+  }
+}

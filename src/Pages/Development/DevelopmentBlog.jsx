@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
@@ -11,7 +11,35 @@ function DataItem({ htmlString }) {
 }
 
 function DevelopmentBlog() {
-    const myData = useLoaderData();
+  const [myData, setMyData] = useState([]);
+
+
+  //pagination 3 states
+  const [pageCount, setPageCount] = useState(0);
+  const [page, setPage] = useState(0);
+  const [size, setSize] = useState(6);
+
+
+  useEffect(() => {
+  fetch(`https://empower-server-production.up.railway.app/singleBlog?page=${page}&size=${size}`)
+    .then(response => response.json())
+    .then(json => setMyData(json))
+  }, [page,size])
+
+
+  useEffect(() => {
+    fetch('https://empower-server-production.up.railway.app/serviceCountOne')
+    .then(res=>res.json())
+    .then(data =>{
+        const count = data.count;
+        const pages = Math.ceil(count/4);
+        setPageCount(pages);
+    })
+}, [])
+
+
+
+    //const myData = useLoaderData();
     console.log(myData);
   return (
     <>
@@ -29,6 +57,30 @@ function DevelopmentBlog() {
         
         </div>
       ))}
+
+
+      {/* pagination */}
+
+      <div className='pagination'>
+                    {
+                        [...Array(pageCount).keys()].map(number =><button
+                        className={page === number ? 'selected' : ''}
+                        onClick={()=>setPage(number)}
+                        >{number + 1}</button>)
+                    }
+                    <select className='selector' onChange={e=> setSize(e.target.value)}>
+                        <option value ='5'>5</option>
+                        <option value ='10' selected>10</option>
+                        <option value ='15'>15</option>
+                        <option value ='20'>20</option>
+                    </select>
+                </div>
+
+                {/* pagination */}
+
+
+
+
     </div>
 
 <Footer />
