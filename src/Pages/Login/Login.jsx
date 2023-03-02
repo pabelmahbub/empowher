@@ -1,6 +1,6 @@
 import React from 'react'
 
-import m5 from '../../Assets/31.webp'
+import m5 from '../../Assets/images/61.webp'
 import { Link } from 'react-router-dom';
 
 
@@ -63,7 +63,7 @@ function Login() {
                     <input style={{borderRadius:'4px'}} className="btn button text-transform:capitalize" type="submit" value="login" />
                   </div>
                 </form>
-                <p className='pt-2 pb-4 text-center'>New to Voice? <Link to='/signup' className='text-orange-600 font-bold'>SignUp</Link></p>
+                <p className='pt-2 pb-4 text-center'>New to BloomsGirl? <Link to='/signup' className='text-orange-600 font-bold'>SignUp</Link></p>
               </div>
             </div>
           </div>

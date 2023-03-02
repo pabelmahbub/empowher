@@ -68,7 +68,7 @@ function Blog() {
       </ul>
     </div>
     <div className="navbar-center">
-    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'20px', color:'tomato',fontWeight:900}}>Voice</Link>
+    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'20px', color:'tomato',fontWeight:900}}>BloomsGirl</Link>
   </div>
   </div>
   
