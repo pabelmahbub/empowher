@@ -40,7 +40,7 @@ function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <NavLink to='/signup' className="btn text-sm" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink>
+    {/* <NavLink to='/signup' className="btn text-sm" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink> */}
   </div>
 </div>
 
