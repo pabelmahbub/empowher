@@ -1,64 +1,64 @@
-import React, { Children, createContext, useEffect, useState } from 'react'
-import { createUserWithEmailAndPassword, getAuth,  onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
-import app from '../Firebase/firebase.config'
+// import React, { Children, createContext, useEffect, useState } from 'react'
+// import { createUserWithEmailAndPassword, getAuth,  onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
+// import app from '../Firebase/firebase.config'
 
-export const AuthContext = createContext();
-const auth = getAuth(app);
+// export const AuthContext = createContext();
+// const auth = getAuth(app);
 
-function AuthProvider({children}) {
-    const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(true);
+// function AuthProvider({children}) {
+//     const [user, setUser] = useState(null);
+//     const [loading, setLoading] = useState(true);
 
 
-    //for signup(create user): 
+//     //for signup(create user): 
 
-    const createUser = (email, password)=>{
-      return createUserWithEmailAndPassword(auth, email, password);
-    }
+//     const createUser = (email, password)=>{
+//       return createUserWithEmailAndPassword(auth, email, password);
+//     }
 
-    useEffect(() => {
-      const unsubscribe = onAuthStateChanged(auth, currentUser =>{
-        console.log(currentUser);
-        setUser(currentUser);
+//     useEffect(() => {
+//       const unsubscribe = onAuthStateChanged(auth, currentUser =>{
+//         console.log(currentUser);
+//         setUser(currentUser);
         
-      });
-      return ()=>{
-         return unsubscribe();
-      }
+//       });
+//       return ()=>{
+//          return unsubscribe();
+//       }
     
      
-    }, [])
+//     }, [])
 
 
-    //for login: 
+//     //for login: 
 
-    const loginUser = (email, password)=>{
-      return signInWithEmailAndPassword(auth, email, password);
-    }
-    useEffect(() => {
-      const unsubscribe = onAuthStateChanged(auth, currentUser =>{
-        console.log(currentUser);
-        setUser(currentUser);
-      });
-      return ()=>{
-         return unsubscribe();
-      }
+//     const loginUser = (email, password)=>{
+//       return signInWithEmailAndPassword(auth, email, password);
+//     }
+//     useEffect(() => {
+//       const unsubscribe = onAuthStateChanged(auth, currentUser =>{
+//         console.log(currentUser);
+//         setUser(currentUser);
+//       });
+//       return ()=>{
+//          return unsubscribe();
+//       }
      
-    }, [])
+//     }, [])
 
 
-    const authInfo = {
-         user,
-         loading,
-         createUser,
-         loginUser,
-    }
+//     const authInfo = {
+//          user,
+//          loading,
+//          createUser,
+//          loginUser,
+//     }
 
-  return (
-    <AuthContext.Provider value={authInfo}>
-        {children}
-    </AuthContext.Provider>
-  )
-}
+//   return (
+//     <AuthContext.Provider value={authInfo}>
+//         {children}
+//     </AuthContext.Provider>
+//   )
+// }
 
-export default AuthProvider;
+// export default AuthProvider;
