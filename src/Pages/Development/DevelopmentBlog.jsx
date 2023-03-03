@@ -68,11 +68,11 @@ function DevelopmentBlog() {
                         onClick={()=>setPage(number)}
                         >{number + 1}</button>)
                     }
-                    <select className='selector' onChange={e=> setSize(e.target.value)}>
-                        <option value ='5'>5</option>
-                        <option value ='10' selected>10</option>
-                        <option value ='15'>15</option>
-                        <option value ='20'>20</option>
+                   <select className='selector' onChange={e=> setSize(e.target.value)}>
+                        <option value ='6' selected>6</option>
+                        <option value ='12'>12</option>
+                        <option value ='18'>18</option>
+                        <option value ='24'>24</option>
                     </select>
                 </div>
 
