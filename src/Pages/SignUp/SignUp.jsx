@@ -1,35 +1,35 @@
 import React, { useContext } from 'react';
 import m5 from '../../Assets/37.webp'
 import { Link, useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../contexts/AuthProvider';
+//import { AuthContext } from '../../contexts/AuthProvider';
 
 
 function SignUp() {
-   const {createUser} = useContext(AuthContext);
-  const navigate = useNavigate();
+  //  const {createUser} = useContext(AuthContext);
+  // const navigate = useNavigate();
 
  
 
-    const handleSignUp=(e)=>{
-      e.preventDefault();
-      const form = e.target;
-      const name = form.name.value;
-      const email = form.email.value;
-      const password = form.password.value;
+    // const handleSignUp=(e)=>{
+    //   e.preventDefault();
+    //   const form = e.target;
+    //   const name = form.name.value;
+    //   const email = form.email.value;
+    //   const password = form.password.value;
 
-      createUser(email, password)
-      .then(result => {
-        const user = result.user;
-        form.reset();
-        console.log(user);
-        navigate('/blogs');
-        //toast.success('Nenflix account created successfully!');
+    //   createUser(email, password)
+    //   .then(result => {
+    //     const user = result.user;
+    //     form.reset();
+    //     console.log(user);
+    //     navigate('/blogs');
+    //     //toast.success('Nenflix account created successfully!');
 
-      })
-      .catch(err=> console.log(err));
-      form.reset();
+    //   })
+    //   .catch(err=> console.log(err));
+    //   form.reset();
       
-    }
+    // }
 
 
   return (
@@ -47,7 +47,7 @@ function SignUp() {
 
       <form className="card-body" 
       onClick={console.log('HEllo')}
-      onSubmit={handleSignUp}
+      //onSubmit={handleSignUp}
       >
         <div className="form-control">
           <label className="label">
