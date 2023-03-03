@@ -67,12 +67,11 @@ function Development() {
           <div style={{marginTop:'20px',fontWeight:'bold',borderRadius:'0px',width:'400px',textAlign:'center'}}>
           {/* <input type="text" value={dataValue} onChange={handleDataChange} style={{marginTop:'20px',fontWeight:'bold', width:'300px',borderRadius:'0px'}} placeholder='Name *'/>  */}
 
-             <DatePicker  selected={startDate} onChange={(date) => setStartDate(date)} showTimeSelect
-  dateFormat="Pp" />
+             <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} showTimeSelect dateFormat="Pp" />
 
           </div >
              {/* <button type="submit">Submit</button> */}
-             <input style={{backgroundColor:'salmon', color:'#fff',fontWeight:'bold',width:'30%'}}type="submit"  />
+             <input style={{backgroundColor:'salmon', color:'#fff',fontWeight:'bold',width:'30%'}}type = "submit"  />
        </form>
 
      </div>

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider';
 
 
 function Navbar() {
@@ -18,7 +19,6 @@ function Navbar() {
       <li><NavLink className={({ isActive }) =>
               isActive ? "active" : undefined
             } to='/home' style={{fontFamily:'raleway'}}>Home</NavLink></li>
-       
         <li><NavLink  to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
         <li><NavLink  to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
         <li><NavLink  to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>

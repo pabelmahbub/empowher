@@ -1,31 +1,32 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import m5 from '../../Assets/images/61.webp'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../contexts/AuthProvider';
 
 
 
 function Login() {
-//   const {loginUser} = useContext(AuthContext);
-//   const navigate = useNavigate();
+  const {loginUser} = useContext(AuthContext);
+  const navigate = useNavigate();
 
-//   const handleLogin =(e)=>{
-//     e.preventDefault();
-//       const form = e.target;
-//       const email = form.email.value;
-//       const password = form.password.value;
+  const handleLogin =(e)=>{
+    e.preventDefault();
+      const form = e.target;
+      const email = form.email.value;
+      const password = form.password.value;
 
-//       loginUser(email, password)
-//       .then(result => {
-//         const user = result.user;
-//         form.reset();
-//         console.log(user);
+      loginUser(email, password)
+      .then(result => {
+        const user = result.user;
+        form.reset();
+        console.log(user);
        
-//         navigate('/homepage');
-//       })
-//       .catch(err=> console.log(err));
-//       form.reset();
-//     }
+        navigate('/blogs');
+      })
+      .catch(err=> console.log(err));
+      form.reset();
+    }
 
  
 
@@ -42,7 +43,7 @@ function Login() {
               <h1 className="text-5xl text-center font-bold mt-10">Login</h1>
 
                 <form className="card-body"
-                //  onSubmit={handleLogin}
+                 onSubmit={handleLogin}
                  >
                   <div className="form-control">
                     <label className="label">
