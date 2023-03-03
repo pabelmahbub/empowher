@@ -23,7 +23,7 @@ function PostBlog() {
     <>
    <div className='add-service'>
       <h1 className='titleStyle'><span className='title'>BloomsGirl</span></h1>
-      <h1 className='bottomText mb-6'><span className='title'>13 Questions: 1 minute <br/>Suggestion/Advice To your younger one</span></h1>
+      <h1 className='bottomText mb-6'><span className='title'>13 Questions: 1 minute <br/>Suggest/Advise To your younger one</span></h1>
          {/**React-hook-form */}
       <form onSubmit={handleSubmit(onSubmit)}>
       <input {...register("Date", { required: true, maxLength: 100 })} placeholder='Date*' />

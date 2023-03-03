@@ -23,7 +23,7 @@ function Services() {
     name: 'what we do',
     img: a3,
     description: "Our vision is to create workforce 50/50 in our society.",
-    myText:"Share my experience",
+    myText:"Share your opinion",
     path:"/postBlog"
     
   },
@@ -32,7 +32,7 @@ function Services() {
     name: 'Get involved',
     img: a1,
     description: "By publishing successful life/career story and tell know how to live like a queen.",
-    myText:"All the heroes",
+    myText:"All the heroic Girls",
     path:"/singleBlog"
    
   },
