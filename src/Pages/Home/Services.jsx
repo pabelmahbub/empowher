@@ -13,7 +13,7 @@ function Services() {
     _id: 1,
     name: 'Who we are',
     img: a4,
-    description: "Charitable organization; creating mass awareness among people to ensure  human rights of women.",
+    description: "Creating mass awareness among people to ensure  human rights of women.",
     myText:"Short Blogs",
     path:"/blogs"
     
@@ -22,7 +22,7 @@ function Services() {
     _id: 2,
     name: 'what we do',
     img: a3,
-    description: "Our vision is to create workforce 50/50 in our society.",
+    description: "Our vision is to create workforce women-men 50/50 in our society.",
     myText:"Share your opinion",
     path:"/postBlog"
     
