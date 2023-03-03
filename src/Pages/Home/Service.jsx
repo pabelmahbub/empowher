@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Service({ service }) {
   return (
@@ -9,7 +10,9 @@ function Service({ service }) {
       <div class="card-body items-center text-center">
         <h2 style={{fontFamily:'raleway'}} class="card-title">{service.name}</h2>
         <p style={{fontFamily:'raleway'}}>{service.description}</p>
-        <button style={{borderRadius:'0px',fontFamily:'raleway'}} className="btn btn-outline">{service.myText}</button>
+        <Link to={`${service.path}`}>
+           <button style={{borderRadius:'0px',fontFamily:'raleway'}} className="btn btn-outline">{service.myText}</button>
+        </Link>
       </div>
     </div>
   )
