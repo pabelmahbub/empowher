@@ -25,14 +25,14 @@ function BlogDetail() {
        <p style={{color:'#fff'}} className="text-md blogDetail">I am {data.Old} years old.</p>
        <p style={{color:'#fff'}} className="text-md blogDetail pb-2">In my surroundings educated female child-  {data.Education} .</p>
        {data.Fields && 
-       <p style={{color:'#fff'}} className="text-md blogDetail">What are the reasons women are not 50/50 in all fields- {data.Fields} .</p>
+       <p style={{color:'#fff',whiteSpace:'initial'}} className="text-md blogDetail">What are the reasons women are not 50/50 in all fields- {data.Fields} .</p>
         } 
        {data.Life && 
        <p style={{color:'#fff'}} className="text-md blogDetail">Women need more attention in- {data.Life} .</p>
         } 
        <p style={{color:'#fff'}} className="text-md blogDetail">In my age I think about my life is- {data.Feel} .</p>
        <p style={{color:'#fff'}} className="text-md blogDetail pb-3">{data.Society} under appreciated in society.</p>
-       <p style={{color:'#fff'}} className="text-md blogDetail">People are unhappy in our surroundings because they are- {data.Unhappy} .</p>
+       <p style={{color:'#fff', whiteSpace:'initial'}} className="text-md blogDetail">People are unhappy in our surroundings because they are- {data.Unhappy} .</p>
        <p style={{color:'#fff'}} className="text-md blogDetail">My advice for the younger self is- {data.Advice} .</p>
        {data.Change &&
        <p style={{color:'#fff'}} className="text-md blogDetail pb-3">I want to change in myself- {data.Change} .</p>
