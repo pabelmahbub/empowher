@@ -6,22 +6,23 @@ import m5 from '../../Assets/images/66.webp'
 function StepOne() {
   const services = [{
     _id: 1,
-    name: 'Violence and oppression directed against women',
+    name: 'Freedom of BloomsGirl and freedom to grow',
     
   },
   {
     _id: 2,
-    name: 'Less wage for women in workplace',
+    name: 'Ensure equal wage for women in workplace',
     
   },
   {
     _id: 3,
-    name: 'Freedom of BloomsGirl and freedom to grow',
+    name: 'Right to express opinion in home and outside',
+    
    
   },
   {
     _id: 4,
-    name: 'Having no right to express opinion',
+    name: 'Stopping violence and oppression directed against women',
    
   },
   ]
@@ -85,7 +86,7 @@ function StepOne() {
           services.map(service => 
        <div className="boxContainer card lg:card-side bg-base-100 shadow-xl">
           <div className="">
-          <h2 style={{fontFamily:'raleway'}} className="text-xl pl-3 pr-2 py-3">{service.name}</h2>
+          <h2 style={{fontFamily:'raleway'}} className="text-center text-md pl-3 pr-2 py-3">{service.name}</h2>
    
        </div>
 </div>

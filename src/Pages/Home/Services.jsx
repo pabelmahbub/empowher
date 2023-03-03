@@ -13,7 +13,7 @@ function Services() {
     _id: 1,
     name: 'Who we are',
     img: a4,
-    description: "we’ve been helping people claim their rights across the world.",
+    description: "we’ve been helping create awareness among girls about their rights.Our vision is to create workforce 50/50 in our society.",
     myText:"Read Our story"
     
   },
@@ -21,7 +21,7 @@ function Services() {
     _id: 2,
     name: 'what we do',
     img: a3,
-    description: "we’ve been helping people claim their rights across the world.",
+    description: "we’ve been changing people's conception towards female by creating mass awareness.",
     myText:"Browse the Issues"
     
   },
@@ -29,7 +29,7 @@ function Services() {
     _id: 3,
     name: 'Get involved',
     img: a1,
-    description: "we’ve been helping people claim their rights across the world.",
+    description: "we are publishing successful story from which others will be encouraged and know how to live like a queen.",
     myText:"Take Action"
    
   },

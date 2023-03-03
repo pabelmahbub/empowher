@@ -55,7 +55,7 @@ function Blog() {
 
   <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
       </label>
       <ul style={{backgroundColor:'#fff',width:'200px',marginTop:''}} tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2">
       <li><NavLink className={({ isActive }) =>
@@ -68,7 +68,7 @@ function Blog() {
       </ul>
     </div>
     <div className="navbar-center">
-    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'20px', color:'tomato',fontWeight:900}}>BloomsGirl</Link>
+    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'16px', color:'tomato',fontWeight:900}}>B.Girl</Link>
   </div>
   </div>
   
