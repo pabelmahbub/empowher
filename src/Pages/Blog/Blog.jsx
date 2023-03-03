@@ -3,6 +3,7 @@ import './Blog.css';
 import { Link, Navigate, NavLink, useLoaderData, useNavigate } from 'react-router-dom'
 import Footer from '../Footer/Footer';
 import OneBlog from './OneBlog';
+import Loading from '../Shared/Loading';
 
 function Blog() {
     const [blogs, setBlogs] = useState([])
@@ -90,17 +91,23 @@ function Blog() {
 
 
 
-   
+{blogs.length === 0 ? <Loading /> :
+   <>
     <div class="my-10 mx-5 mb-36">
     <h2 style={{color:'#000',fontFamily:'raleway', fontWeight:700,textAlign:'center',fontSize:'28px', paddingBottom:'20px'}}>My Life Thinking/ Advice to my younger self: </h2>
 
       <div style={{backgroundColor:''}} className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+
+
+
 
        {(searchTerm.length == 0) && blogs.map(blog=>(
           <OneBlog
             key={blog._id}
             blog={blog}></OneBlog>)
        )}
+  
+
 
 {/* 
       { blogs.map(blogs.map(blog=>(
@@ -113,6 +120,9 @@ function Blog() {
                  key={blog._id}
                  blog={blog}></OneBlog>)
                  )}
+
+
+
 
 
 
@@ -140,6 +150,10 @@ function Blog() {
 
 
     </div>
+    </>
+  }
+
+  
    <Footer />
     </>
   )

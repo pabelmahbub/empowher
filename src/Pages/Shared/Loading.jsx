@@ -1,8 +1,7 @@
 import React from 'react';
-
+const Spinner = require('react-spinkit');
 
 function Loading() {
-    const Spinner = require('react-spinkit');
   return (
         <div className="flex justify-center items-center h-screen">
               <div className="grid gap-2">
@@ -14,4 +13,4 @@ function Loading() {
   )
 }
 
-export default Loading;
+export default Loading

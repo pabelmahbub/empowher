@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
+import Loading from '../Shared/Loading';
 
 
 function DataItem({ htmlString }) {
@@ -44,6 +45,10 @@ function DevelopmentBlog() {
   return (
     <>
     <Navbar />
+
+    {myData.length === 0 ? <Loading /> :
+   <>
+
     <div className='add-service1'>
     <h1 className='titleStyle'><span className='title'>"I have to solve my problem!"</span></h1>
     <h1 className='bottomText1 mb-6'><span className='title'>My successful journey in my life as a girl.</span></h1>
@@ -82,7 +87,8 @@ function DevelopmentBlog() {
 
 
     </div>
-
+    </>
+}
 <Footer />
   
     </>
