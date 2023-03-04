@@ -7,8 +7,8 @@ import ReactGA from 'react-ga';
 
 
 function App() {
-  ReactGA.initialize('4672193337');
-  
+  ReactGA.initialize('G-YNXVWYCYPZ');
+
   return (
     <div className='max-w-7xl mx-auto'>
       <RouterProvider router={router} />
