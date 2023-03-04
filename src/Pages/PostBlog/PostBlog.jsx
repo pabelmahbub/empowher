@@ -13,7 +13,7 @@ function PostBlog() {
                      .then(res=>{
                               console.log(res);
                               if(res.data.insertedId){
-                                alert('1 min section is  added successfully');
+                                alert('Added in One min section!');
                                 reset();
                               }
                      })
