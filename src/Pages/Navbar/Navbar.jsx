@@ -2,7 +2,6 @@ import React, { useContext } from 'react'
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
-import { useEffect } from 'react';
 import { FaUserCircle } from 'react-icons/fa';
 
 
@@ -33,10 +32,17 @@ const handleLogOut = ()=>{
       <li><NavLink className={({ isActive }) =>
               isActive ? "active" : undefined
             } to='/home' style={{fontFamily:'raleway'}}>Home</NavLink></li>
-        <li><NavLink  to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
         <li><NavLink  to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
-        <li><NavLink  to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
         <li><NavLink  to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
+
+        {user &&
+             <>
+                <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
+                <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
+             </>
+
+         }
+
       </ul>
     </div>
     <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'30px', color:'tomato',fontWeight:900}}>B<span style={{textDecoration:'underline',fontSize:"20px"}}>looms Girl</span></Link>
@@ -47,10 +53,22 @@ const handleLogOut = ()=>{
               isActive ? "active" : undefined
             } to='/home'>Home</NavLink></li>
        
-       <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
+        {/* <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li> */}
         <li><NavLink to='/blogs' style={{fontFamily:'raleway'}}>Life Thinking</NavLink></li>
-        <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
+        {/* <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li> */}
         <li><NavLink to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
+        
+
+        {user &&
+         <div style={{backgroundColor:'#fff'}} className="dropdown dropdown-bottom">
+           <label tabIndex={0} style={{backgroundColor:'#fff', color:'#333',fontFamily:'raleway',borderColor:'#fff'}}  className="btn">Contribute</label>
+              <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 w-52">
+                <li><NavLink to='/postBlog' style={{fontFamily:'raleway'}}>One Min. Advice</NavLink></li>
+                <li><NavLink to='/development' style={{fontFamily:'raleway'}}>Life Story</NavLink></li>
+              </ul>
+         </div>
+         }
+
     </ul>
   </div>
   {(!user) ?

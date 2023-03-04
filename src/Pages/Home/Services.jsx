@@ -13,7 +13,7 @@ function Services() {
     _id: 1,
     name: 'Who we are',
     img: a4,
-    description: "Creating mass awareness among people to ensure  human rights of women.",
+    description: "BloomsGirl a platform to create awareness and share knowledge amongst women",
     myText:"Short Blogs",
     path:"/blogs"
     
@@ -22,8 +22,8 @@ function Services() {
     _id: 2,
     name: 'what we do',
     img: a3,
-    description: "Our vision is to create workforce women-men 50/50 in our society.",
-    myText:"Share your opinion",
+    description: "Our vision is to create equal ratio in workforce (women:men 50:50) in our society.",
+    myText:"Share opinion",
     path:"/postBlog"
     
   },
@@ -31,7 +31,7 @@ function Services() {
     _id: 3,
     name: 'Get involved',
     img: a1,
-    description: "By publishing successful life/career story and tell know how to live like a queen.",
+    description: "Let's publish successful life/career story and tell know how to live like a queen.",
     myText:"All the heroic Girls",
     path:"/singleBlog"
    

@@ -6,23 +6,23 @@ import m5 from '../../Assets/images/66.webp'
 function StepOne() {
   const services = [{
     _id: 1,
-    name: 'Freedom of BloomsGirl and freedom to grow',
+    name: 'Freedom of Girls to speak, freedom to grow and live',
     
   },
   {
     _id: 2,
-    name: 'Ensure equal wage for women in workplace',
+    name: 'Ensure equal wage and participation for women in workplace',
     
   },
   {
     _id: 3,
-    name: 'Right to express opinion in home and outside',
+    name: 'Rights to express opinion,belief in home and outside',
     
    
   },
   {
     _id: 4,
-    name: 'Stopping violence and oppression directed against women',
+    name: 'Ensure safety and stopping violence and oppression against women',
    
   },
   ]
@@ -32,18 +32,18 @@ function StepOne() {
     
     
    
-        <div className="hero min-h-screen"> 
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src={m5} className="h-72"/>
-    <div>
-      
-    <div>
-                    <p className='pt-3' style={{fontSize:'25px',fontWeight:'700',fontFamily:'raleway', color:'tomato'}}>BloomsGirl! <span style={{color:'#0096FF',fontSize:'19px'}}><a target="_blank" href="https://www.hrw.org/topic/womens-rights">What Is Our Motto?</a></span></p>
-                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>Women's rights are a critical aspect of human rights that advocate for the  <span style={{color:'#0096FF'}}><a target="_blank" href="https://www.pewresearch.org/social-trends/2013/12/11/chapter-2-equal-treatment-for-men-and-women/">equal treatment </a></span>and opportunities for women in all spheres of life.</p>
-                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}> This includes ensuring that women have equal access to education, employment, healthcare, and political representation, among others. </p>
-                    <p className='pt-3' style={{fontSize:'16px',fontWeight:'400',fontFamily:'raleway'}}>The fight for women's rights has a long and complex history, characterized by various social, economic, and political movements. While progress has been made in some areas, such as increased access to education and employment opportunities, women still face significant challenges globally, including gender-based violence, unequal pay, and limited political representation. It is crucial to continue to work towards <span style={{color:'#0096FF'}}><a target="_blank" href="https://www.un.org/en/global-issues/gender-equality#:~:text=Gender%20equality%2C%20besides%20being%20a,spurs%20productivity%20and%20economic%20growth.">gender equality </a></span>to ensure that women's rights are respected, protected, and fulfilled in every society.</p>
-                </div>
-      
+    <div className="hero min-h-screen"> 
+       <div className="hero-content flex-col lg:flex-row-reverse">
+       <img src={m5} className="h-72"/>
+      <div>
+      <div>
+        <p className='pt-3' style={{fontSize:'25px',fontWeight:'700',fontFamily:'raleway', color:'tomato'}}>BloomsGirl! <span style={{color:'#0096FF',fontSize:'19px'}}><a target="_blank" href="https://www.hrw.org/topic/womens-rights">What Is Our Motto?</a></span></p>
+        <p className='pt-3' style={{fontSize:'15px',fontWeight:'400',fontFamily:'raleway'}}>Women's rights are a critical aspect of human rights that advocate for the  <span style={{color:'#0096FF'}}><a target="_blank" href="https://www.pewresearch.org/social-trends/2013/12/11/chapter-2-equal-treatment-for-men-and-women/">equal treatment </a></span>and opportunities for women in all spheres of life.</p>
+        <p className='pt-3' style={{fontSize:'15px',fontWeight:'400',fontFamily:'raleway'}}> This includes ensuring that women have equal access to education, employment, healthcare, and political representation, among others. </p>
+        <p className='pt-3' style={{fontSize:'15px',fontWeight:'400',fontFamily:'raleway'}}>The fight for women's rights has a long and complex history, characterized by various social, economic, and political movements. While progress has been made in some areas, such as increased access to education and employment opportunities, women still face significant challenges globally, including gender-based violence, unequal pay, and limited political representation. It is crucial to continue to work towards <span style={{color:'#0096FF'}}><a target="_blank" href="https://www.un.org/en/global-issues/gender-equality#:~:text=Gender%20equality%2C%20besides%20being%20a,spurs%20productivity%20and%20economic%20growth.">gender equality </a></span>to ensure that women's rights are respected, protected, and fulfilled in every society. From UN Human Rights report, violence against women is linked to   <span style={{fontWeight:'600',fontSize:'15px'}}>ABSOLUTE POVERTY, ILLITERACY, ARMED CONFLICT. </span></p>
+        <p className='pt-3' style={{fontSize:'15px',fontWeight:'400',fontFamily:'raleway'}}>In several countries norms and values had been established to protect women; however they had not been satisfactorily implemented. Implementation was costly and required adequate resources. BloomsGirl a platform to create awareness amongst mass people to ensure women rights as a human being and girls share their life experience of how she overcome all obstacles, social superstition and  share her knowledge, experience about career and life for other fellow girls.</p>
+    </div>
+
     </div>
   </div>
 </div>

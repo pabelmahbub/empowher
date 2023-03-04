@@ -13,7 +13,7 @@ function Blog() {
      //pagination 3 states
     const [pageCount, setPageCount] = useState(0);
     const [page, setPage] = useState(0);
-    const [size, setSize] = useState(6);
+    const [size, setSize] = useState(9);
 
 
     useEffect(() => {
@@ -139,10 +139,10 @@ function Blog() {
                         >{number + 1}</button>)
                     }
                     <select className='selector' onChange={e=> setSize(e.target.value)}>
-                        <option value ='6' selected>6</option>
-                        <option value ='12'>12</option>
-                        <option value ='18'>18</option>
-                        <option value ='24'>24</option>
+                        <option value ='9' selected>9</option>
+                        <option value ='15'>15</option>
+                        <option value ='21'>21</option>
+                        <option value ='27'>27</option>
                     </select>
                 </div>
 
