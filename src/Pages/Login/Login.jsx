@@ -1,15 +1,18 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 
 import m5 from '../../Assets/images/61.webp'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 
 
 function Login() {
-  const {loginUser, providerLogin} = useContext(AuthContext);
+  const {user, loginUser, providerLogin} = useContext(AuthContext);
   const navigate = useNavigate();
+  const { state } = useLocation();
+  const from = state?.from?.pathname || "/";
+
 
   const handleLogin =(e)=>{
     e.preventDefault();
@@ -22,12 +25,19 @@ function Login() {
         const user = result.user;
         form.reset();
         console.log(user);
-       
-        navigate('/blogs');
       })
       .catch(err=> console.log(err));
       form.reset();
     }
+
+
+    //for redirection to the route after authenticated[using RequiredAuth for private route ]:
+
+    useEffect( () =>{
+      if(user){
+        navigate(from, { replace:true });
+      }
+    },[user, from, navigate])
 
 
         //google sign in:
