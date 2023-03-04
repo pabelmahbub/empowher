@@ -7,7 +7,7 @@ import { GoogleAuthProvider } from 'firebase/auth';
 
 function SignUp() {
    const {createUser, providerLogin} = useContext(AuthContext);
-  const navigate = useNavigate();
+   const navigate = useNavigate();
 
  
 
@@ -83,7 +83,7 @@ function SignUp() {
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label> */}
         </div>
-        
+
         <div style={{display: 'flex',justifyContent: 'center',alignItems: 'center',paddingTop:'10px'}}>
            <img  onClick={handleGoogleSignIn} src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" style={{maxWidth: "100%",height: "30px",}} alt="Google"/>
         </div>
