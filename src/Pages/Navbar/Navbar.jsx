@@ -2,9 +2,24 @@ import React, { useContext } from 'react'
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 
 function Navbar() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+  const handleButtonClick = () => {
+    ReactGA.event({
+      category: 'Button',
+      action: 'Click',
+      label: 'Download PDF'
+    });
+  };
+
+
   return (
     <div className='header'>
 
@@ -40,7 +55,7 @@ function Navbar() {
     </ul>
   </div>
   <div className="navbar-end">
-    <NavLink to='/signup' className="btn text-sm" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink>
+    <NavLink to='/signup' onClick={handleButtonClick} className="btn text-sm" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink>
   </div>
 </div>
 
