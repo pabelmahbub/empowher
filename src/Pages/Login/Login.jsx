@@ -3,11 +3,12 @@ import React, { useContext } from 'react'
 import m5 from '../../Assets/images/61.webp'
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 
 
 function Login() {
-  const {loginUser} = useContext(AuthContext);
+  const {loginUser, providerLogin} = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogin =(e)=>{
@@ -28,6 +29,19 @@ function Login() {
       form.reset();
     }
 
+
+        //google sign in:
+
+        const googleProvider = new GoogleAuthProvider;
+
+        const handleGoogleSignIn = ()=>{
+             providerLogin(googleProvider)
+             .then(result =>{
+              const user = result.user;
+              console.log(user);
+             })
+             .catch(err => console.error(err))
+        }
  
 
   return (
@@ -60,6 +74,11 @@ function Login() {
                       <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                     </label> */}
                   </div>
+
+                  <div style={{display: 'flex',justifyContent: 'center',alignItems: 'center',paddingTop:'10px'}}>
+                       <img  onClick={handleGoogleSignIn} src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" style={{maxWidth: "100%",height: "30px",}} alt="Google"/>
+                  </div>
+
                   <div className="form-control mt-6">
                     <input style={{borderRadius:'4px'}} className="btn button text-transform:capitalize" type="submit" value="login" />
                   </div>

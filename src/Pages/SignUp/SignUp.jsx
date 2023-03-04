@@ -2,10 +2,11 @@ import React, { useContext } from 'react';
 import m5 from '../../Assets/37.webp'
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 
 function SignUp() {
-   const {createUser} = useContext(AuthContext);
+   const {createUser, providerLogin} = useContext(AuthContext);
   const navigate = useNavigate();
 
  
@@ -23,12 +24,24 @@ function SignUp() {
         form.reset();
         console.log(user);
         navigate('/blogs');
-        //toast.success('Nenflix account created successfully!');
 
       })
       .catch(err=> console.log(err));
       form.reset();
       
+    }
+
+    //google sign in:
+
+    const googleProvider = new GoogleAuthProvider;
+
+    const handleGoogleSignIn = ()=>{
+         providerLogin(googleProvider)
+         .then(result =>{
+          const user = result.user;
+          console.log(user);
+         })
+         .catch(err => console.error(err))
     }
 
 
@@ -70,6 +83,11 @@ function SignUp() {
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label> */}
         </div>
+        
+        <div style={{display: 'flex',justifyContent: 'center',alignItems: 'center',paddingTop:'10px'}}>
+           <img  onClick={handleGoogleSignIn} src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" style={{maxWidth: "100%",height: "30px",}} alt="Google"/>
+        </div>
+
         <div className="form-control mt-6">
           <input  style={{borderRadius:'4px'}} className="btn button text-transform:capitalize" type="submit" value="signup" />
         </div>

@@ -3,21 +3,20 @@ import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 import { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import { FaUserCircle } from 'react-icons/fa';
 
 
 function Navbar() {
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  const {user, logOut} = useContext(AuthContext);
+  console.log('My user', user);
 
-  const handleButtonClick = () => {
-    ReactGA.event({
-      category: 'Button',
-      action: 'Click',
-      label: 'Download PDF'
-    });
-  };
+const handleLogOut = ()=>{
+  logOut()
+  .then( ()=>{
+
+  })
+  .catch(err => console.error(err));
+}
 
 
   return (
@@ -54,9 +53,19 @@ function Navbar() {
         <li><NavLink to='/singleBlog' style={{fontFamily:'raleway'}}>Victory Story</NavLink></li>
     </ul>
   </div>
+  {(!user) ?
   <div className="navbar-end">
-    <NavLink to='/signup' onClick={handleButtonClick} className="btn text-sm" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink>
+    <NavLink to='/signup'  className="btn text-sm" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink>
   </div>
+  :
+  <div className="navbar-end">
+    {(user?.photoURL) ? <img  style={{height:'26px',borderRadius:'13px',marginRight:'10px'}} roundedCircle src={user?.photoURL} /> : <FaUserCircle style={{height:'30',marginRight:'10px'}}/> }
+     
+     {/* <p style={{fontFamily:'raleway'}}>Welcome {user?.displayName || user?.email }</p> */}
+     <NavLink to='' onClick={handleLogOut} className="text-sm font-bold" style={{borderColor:'none', borderRadius:'4px'}}>LogOut</NavLink>
+  </div>
+
+  }
 </div>
 
 
