@@ -62,7 +62,7 @@ const handleLogOut = ()=>{
     {(user?.photoURL) ? <img  style={{height:'26px',borderRadius:'13px',marginRight:'10px'}} roundedCircle src={user?.photoURL} /> : <FaUserCircle style={{height:'30',marginRight:'10px'}}/> }
      
      {/* <p style={{fontFamily:'raleway'}}>Welcome {user?.displayName || user?.email }</p> */}
-     <NavLink to='' onClick={handleLogOut} className="text-sm font-bold" style={{borderColor:'none', borderRadius:'4px'}}>LogOut</NavLink>
+     <NavLink to='' onClick={handleLogOut} className="text-sm font-bold" style={{backgroundColor:'#fff'}}>LogOut</NavLink>
   </div>
 
   }

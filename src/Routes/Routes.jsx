@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import RequiredAuth from '../contexts/RequiredAuth';
 import MainLayout from '../layout/MainLayout';
 import Blog from '../Pages/Blog/Blog';
 import BlogDetail from '../Pages/Blog/BlogDetail';
@@ -25,8 +26,8 @@ export const router = createBrowserRouter([
     children:[
       {path: "/", element: <Home />},
       {path: "/home", element: <Home />},
-      {path: "postBlog",element: <PostBlog />},
-      {path: "development",element: <Development />},
+      {path: "postBlog",element: <RequiredAuth><PostBlog /></RequiredAuth>},
+      {path: "development",element: <RequiredAuth><Development /></RequiredAuth>},
       {path: "login",element: <Login />},
       {path: "signup",element: <SignUp />},
       {path: "*",element: <NotFound />},
@@ -52,19 +53,19 @@ export const router = createBrowserRouter([
       loader: async () => { 
         return fetch('https://empower-server-production.up.railway.app/blogs');
       },
-      element: <Blog />},
+      element: <RequiredAuth><Blog /></RequiredAuth>},
 
       {
         path: "singleBlog",
         loader: async () => { 
           return fetch('https://empower-server-production.up.railway.app/singleBlog');
         },
-        element: <DevelopmentBlog />},
+        element: <RequiredAuth><DevelopmentBlog /></RequiredAuth>},
 
       {
         path: "/blogs/:id",
         
-        element: <BlogDetail />},
+        element: <RequiredAuth><BlogDetail /></RequiredAuth>},
 
 
 
