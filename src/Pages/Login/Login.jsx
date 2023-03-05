@@ -85,7 +85,7 @@ function Login() {
                     </label> */}
                   </div>
 
-                  <div onClick={handleGoogleSignIn} className="btn button text-transform:capitalize mt-6" style={{display: 'flex',backgroundColor:'#fff',borderRadius:'4px',paddingLeft:'15%',paddingRight:'15%'}}>
+                  <div onClick={handleGoogleSignIn} className="btn button text-transform:capitalize mt-6" style={{display: 'flex',backgroundColor:'#fff',borderRadius:'4px',paddingLeft:'15%',flexDirection:'row'}}>
                       <img   src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" style={{maxWidth: "100%",height: "30px",}} alt="Google"/>
                       <p style={{color:'#000',fontFamily:'raleway'}}>Continue with Google</p>
                   </div>
