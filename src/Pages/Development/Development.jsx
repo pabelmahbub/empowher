@@ -57,12 +57,12 @@ function Development() {
     <div className='add-service'>
        <h1 className='titleStyle'><span className='title'>"Think like a queen. A queen is not afraid to fail."</span></h1>
 
-       <h1 className='bottomText mb-6'><span className='title'>Tell us story of how you overcome obstacles.</span></h1>
+       <h1 className='bottomText mb-6'><span className='title'>Tell us the story of how you overcome obstacles.</span></h1>
 
 
        <form onSubmit={handleSubmit}>
         <div style={{height:'500px',width:'90%',backgroundColor:'#fff',marginTop:'40px', overflow:'scroll'}}>
-             <ReactQuill value={editorValue} theme='snow' onChange={handleEditorChange} reset={reset} placeholder='Please write your name and start your story of how you did it!'/>
+             <ReactQuill value={editorValue} theme='snow' onChange={handleEditorChange} reset={reset} placeholder='Write your name and start your story of how you won it!'/>
           </div>
           <div style={{marginTop:'20px',fontWeight:'bold',borderRadius:'0px',width:'400px',textAlign:'center'}}>
           {/* <input type="text" value={dataValue} onChange={handleDataChange} style={{marginTop:'20px',fontWeight:'bold', width:'300px',borderRadius:'0px'}} placeholder='Name *'/>  */}

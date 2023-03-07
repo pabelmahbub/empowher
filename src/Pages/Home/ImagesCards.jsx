@@ -19,7 +19,7 @@ function ImagesCards() {
         _id: 2,
         name: 'How we grow in life?',
         img: a2,
-        description: "Women grow in their careers through a combination of factors such as education, hard work and mentorship",
+        description: "Women grow in their careers through a combination of factors such as education, hard work, and mentorship",
         myText:"Browse the Issues",
         path:"/singleBlog"
         

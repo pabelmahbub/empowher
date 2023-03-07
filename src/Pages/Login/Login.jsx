@@ -61,7 +61,7 @@ function Login() {
                 <div className="hero w-full my-20">
             <div className="hero-content grid md:grid-cols-2 flex-col lg:flex-row-reverse">
               <div className="text-center lg:text-left">
-               <img src={m5} width="400px" height="100px" className='mr-4' alt=""/>
+               <img src={m5} width="400px" height="100px" className='mr-4' alt="Login-Image"/>
               </div>
               <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
               <h1 className="text-5xl text-center font-bold mt-10">Login</h1>
