@@ -1,9 +1,19 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Navbar from '../Pages/Navbar/Navbar'
 
 function WhatWeDo() {
   return (
     <div className='px-6 pt-5'>
+
+      <Helmet>
+        <title>Blooms Girl</title>
+        <meta 
+           name='description'
+           content='girls empowerment history'
+         />
+      </Helmet>
+
          <img style={{ height: 420, width:'100%', objectFit:'cover' }} src="https://images.unsplash.com/photo-1473605768212-7e1f2c756179?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"></img>
        <h1 className="lg:text-4xl font-bold mt-12 mb-3" style={{fontWeight:'600',fontFamily:'raleway'}}>Blooms Girl Agenda</h1>
          <p className='pt-2' style={{fontSize:'15px',fontWeight:'400',fontFamily:'raleway'}}>BloomsGirl a platform to create awareness amongst mass people to ensure women rights as a human being and girls share their life experience of how she overcome all obstacles, social superstition and share her knowledge, experience about career and life for other fellow girls.</p>

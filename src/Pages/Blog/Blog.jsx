@@ -4,6 +4,7 @@ import { Link, Navigate, NavLink, useLoaderData, useNavigate } from 'react-route
 import Footer from '../Footer/Footer';
 import OneBlog from './OneBlog';
 import Loading from '../Shared/Loading';
+import { Helmet } from 'react-helmet';
 
 function Blog() {
     const [blogs, setBlogs] = useState([])
@@ -52,6 +53,16 @@ function Blog() {
     <>
   
 <div className="navbar bg-base-100">
+
+      <Helmet>
+        <title>Blooms Girl Blog</title>
+        <meta 
+           name='description'
+           content='girls app Blog'
+         />
+      </Helmet>
+
+
   <div className="flex-1">
 
   <div className="dropdown">

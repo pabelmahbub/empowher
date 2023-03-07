@@ -7,6 +7,7 @@ import Services from './Services';
 import ImagesCards from './ImagesCards';
 import LastBanner from './LastBanner';
 import Contribute from './Contribute';
+import { Helmet } from 'react-helmet';
 
 function Home() {
   const [showComponent, setShowComponent] = useState(false);
@@ -20,6 +21,13 @@ function Home() {
 
   return (
     <div>
+       <Helmet>
+        <title>Blooms Girl home</title>
+        <meta 
+           name='description'
+           content='women empowerment blog'
+         />
+      </Helmet>
        
       <Banner />
       <StepOne />

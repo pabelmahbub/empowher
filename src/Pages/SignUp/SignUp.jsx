@@ -3,6 +3,7 @@ import m5 from '../../Assets/37.webp'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
+import { Helmet } from 'react-helmet';
 
 
 function SignUp() {
@@ -61,6 +62,15 @@ function SignUp() {
 
 
 <div className="hero w-full my-20">
+
+      <Helmet>
+        <title>Blooms Girl signUp</title>
+        <meta 
+           name='description'
+           content='girls empowerment signUp'
+         />
+      </Helmet>
+
   <div className="hero-content grid md:grid-cols-2 flex-col lg:flex-row-reverse">
     <div className="text-center lg:text-left">
       <img src={m5} width="400px" className='mr-4' alt="signUp-image"/>

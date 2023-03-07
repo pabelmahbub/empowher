@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import { useForm } from "react-hook-form";
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
@@ -22,6 +23,13 @@ function PostBlog() {
   return (
     <>
    <div className='add-service'>
+    <Helmet>
+        <title>Blooms Girl Post</title>
+        <meta 
+           name='description'
+           content='women empowerment blog post'
+         />
+      </Helmet>
       <h1 className='titleStyle'><span className='title'>BloomsGirl</span></h1>
       <h1 className='bottomText mb-6'><span className='title'>13 Questions: 1 minute <br/>Suggest/Advise To your younger one</span></h1>
          {/**React-hook-form */}

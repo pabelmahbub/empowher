@@ -1,9 +1,19 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 function Footer() {
   let year = new Date().getFullYear() 
   return (
     <>
+
+    <Helmet>
+        <title>Blooms Girl Blog</title>
+        <meta 
+           name='description'
+           content='girls app footer'
+         />
+      </Helmet>
+
     <footer className="footer p-10 bg-neutral text-white">
   <div>
     <span className="footer-title">Services</span> 

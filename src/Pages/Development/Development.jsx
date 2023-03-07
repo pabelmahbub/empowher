@@ -6,6 +6,7 @@ import 'react-quill/dist/quill.snow.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { Navigate, useNavigate } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 function Development() {
     const [editorValue, setEditorValue] = useState('');
@@ -55,6 +56,13 @@ function Development() {
 
   return (
     <div className='add-service'>
+       <Helmet>
+        <title>Blooms Girl development</title>
+        <meta 
+           name='description'
+           content='women empowerment blog development'
+         />
+      </Helmet>
        <h1 className='titleStyle'><span className='title'>"Think like a queen. A queen is not afraid to fail."</span></h1>
 
        <h1 className='bottomText mb-6'><span className='title'>Tell us the story of how you overcome obstacles.</span></h1>

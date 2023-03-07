@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet';
 import { useLoaderData, useParams } from 'react-router-dom'
 import Blog from './Blog';
 
@@ -14,6 +15,15 @@ function BlogDetail() {
   return (
     <>
     <div>
+
+    <Helmet>
+        <title>Blooms Girl Blog details</title>
+        <meta 
+           name='description'
+           content='girls app Blog details'
+         />
+      </Helmet>
+
       
       <div style={{backgroundColor: "rgb(111, 153, 159)"}} className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row">

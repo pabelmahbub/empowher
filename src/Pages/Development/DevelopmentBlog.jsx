@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet';
 import { useLoaderData } from 'react-router-dom'
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
@@ -44,6 +45,16 @@ function DevelopmentBlog() {
     console.log(myData);
   return (
     <>
+
+      <Helmet>
+        <title>Blooms Girl Post Blog</title>
+        <meta 
+           name='description'
+           content='girl app post blog'
+         />
+      </Helmet>
+
+       
     <Navbar />
 
     {myData.length === 0 ? <Loading /> :

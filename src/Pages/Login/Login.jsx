@@ -4,6 +4,7 @@ import m5 from '../../Assets/images/61.webp'
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
 import { GoogleAuthProvider } from 'firebase/auth';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -56,6 +57,15 @@ function Login() {
 
   return (
     <div>
+
+
+       <Helmet>
+        <title>Blooms Girl Login</title>
+        <meta 
+           name='description'
+           content='girls empowerment login'
+         />
+      </Helmet>
 
 
                 <div className="hero w-full my-20">
