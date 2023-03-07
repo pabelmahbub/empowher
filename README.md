@@ -3,7 +3,7 @@
 
 Language:
 ```
-ReactJavascript)
+React(Javascript)
 ```
 Tech stack and packages:
 ```
