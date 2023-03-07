@@ -55,7 +55,7 @@ function Blog() {
 <div className="navbar bg-base-100">
 
       <Helmet>
-        <title>Blooms Girl Blog</title>
+        <title>Blooms Girl Blogs</title>
         <meta 
            name='description'
            content='girls app Blog'

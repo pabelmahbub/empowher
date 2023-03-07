@@ -7,7 +7,7 @@ function Footer() {
     <>
 
     <Helmet>
-        <title>Blooms Girl Blog</title>
+        <title>Blooms Girl</title>
         <meta 
            name='description'
            content='girls app footer'
