@@ -18,7 +18,7 @@ function OneBlog({ blog }) {
     <h2 className="card-title">
     <div className="avatar">
          <div className="w-10 rounded-full">
-           <img src={Image} />
+           <img src={Image} alt="blog writer image" />
           </div>
        </div>
       {Title}<br/>

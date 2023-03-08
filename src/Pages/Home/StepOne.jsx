@@ -84,7 +84,7 @@ function StepOne() {
 <div  className="bigBox grid sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4  gap-5 px-5 py-5">
 {
           services.map(service => 
-       <div className="boxContainer card lg:card-side bg-base-100 shadow-xl">
+       <div className="boxContainer card lg:card-side bg-base-100 shadow-xl" key={service._id}>
           <div className="">
           <h2 style={{fontFamily:'raleway'}} className="text-center text-md pl-3 pr-2 py-3">{service.name}</h2>
    

@@ -22,7 +22,7 @@ function App() {
            name='description'
            content='women empowerment'
          />
-         <meta name='keywords' content="girls, women, women empowerment, gender, gender discrimination, girls blog, girls freedom, women power, amnesty international, girl, woman, women, girls, women rights, human rights, women presidents, women in power, women prime minister, female child protection, female education, international women day, women day, queen, you are queen, how to grow as a girl, blooms girl, bloomsgirl, girls app, girls education, female education, importance of female education, how to be good at career, how to grow as a woman, how to live like a queen, my chapter, my pride, girl lifestyle, girls lifestyle app, girls style, women style, best girl app, best blog apps  "/>
+         <meta name='keywords' content="app, girls app,girls, women, women empowerment, gender, gender discrimination, girls blog, girls freedom, women power, amnesty international, girl, woman, women, girls, women rights, human rights, women presidents, women in power, women prime minister, female child protection, female education, international women day, women day, queen, you are queen, how to grow as a girl, blooms girl, bloomsgirl, girls app, girls education, female education, importance of female education, how to be good at career, how to grow as a woman, how to live like a queen, my chapter, my pride, girl lifestyle, girls lifestyle app, girls style, women style, best girl app, best blog apps  "/>
         
         {/* <style type='text/css'>
            {

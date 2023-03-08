@@ -46,17 +46,18 @@ function ImagesCards() {
   return (
     <div style={{marginTop:'100px'}} className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-6 gap-10">
 {
-          services.map(service => 
-       <div style={{alignItems:'center'}} className="card lg:card-side bg-base-100 shadow-xl">
-        
-         <img src={service.img} style={{height:'350px', width:'400px',objectFit:'fill'}} alt="Album"/>
-         <Link to={service.path}>
-           <div className="card-body">
-             <h2 style={{fontFamily:'raleway'}} className="px-6 card-title">{service.name}</h2>
-             <p style={{fontFamily:'raleway'}} className='px-6 text-sm'>{service.description}</p>
-            </div>
+          services.map(service => (
+           
+       <div style={{alignItems:'center'}} key={service._id} className="card lg:card-side bg-base-100 shadow-xl">
+         
+            <img src={service.img} style={{height:'350px', width:'400px',objectFit:'fill'}} alt="Album"/>
+            <Link to={service.path}>
+            <div className="card-body">
+               <h2 style={{fontFamily:'raleway'}} className="px-6 card-title">{service.name}</h2>
+               <p style={{fontFamily:'raleway'}} className='px-6 text-sm'>{service.description}</p>
+             </div>
             </Link>
-</div>
+         </div>)
 )
 }
 

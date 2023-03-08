@@ -90,13 +90,10 @@ function Login() {
                       <span  className="label-text">Password</span>
                     </label>
                     <input type="text" name='password' placeholder="password" className="input input-bordered" />
-                    {/* <label className="label">
-                      <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                    </label> */}
                   </div>
 
                   <div onClick={handleGoogleSignIn} className="btn button text-transform:capitalize mt-6" style={{display: 'flex',backgroundColor:'#fff',borderRadius:'4px',paddingLeft:'15%',flexDirection:'row'}}>
-                      <img   src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" style={{maxWidth: "100%",height: "30px",}} alt="Google"/>
+                      <img src="https://play-lh.googleusercontent.com/6UgEjh8Xuts4nwdWzTnWH8QtLuHqRMUB7dp24JYVE2xcYzq4HA8hFfcAbU-R-PC_9uA1" style={{maxWidth: "100%",height: "30px",}} alt="Google"/>
                       <p style={{color:'#000',fontFamily:'raleway'}}>Continue with Google</p>
                   </div>
 
