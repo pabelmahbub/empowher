@@ -27,7 +27,9 @@ function BlogDetail() {
       
       <div style={{backgroundColor: "rgb(111, 153, 159)"}} className="hero min-h-screen">
   <div className="hero-content flex-col lg:flex-row">
+    {data.Image &&
     <img src={data.Image} className="lg:max-w-lg md:max-w-md sm:max-w-sm rounded-lg shadow-2xl" alt="bloom girl detail" />
+     }
     <div className="pl-6">
       <h1 style={{color:'#fff'}} className="text-4xl font-bold blogDetail pb-3">Title: {data.Title}</h1>
        <p style={{color:'#fff'}} className="text-2xl font-bold blogDetail pb-2">Hi, I am {data.Name}</p>

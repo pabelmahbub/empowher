@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 
 function OneBlog({ blog }) {
-  const {_id, Title, Date, Name, Location, Old, Feel,Unhappy, Advice, Image, Life, Society, Education } = blog;
+  const {_id, Title, Date, Name, Location, Old, Feel, Unhappy, Advice, Image, Life, Society, Education } = blog;
   
   return (
     <>
@@ -18,7 +18,9 @@ function OneBlog({ blog }) {
     <h2 className="card-title">
     <div className="avatar">
          <div className="w-10 rounded-full">
+          {Image &&
            <img src={Image} alt="blog writer image" />
+          }
           </div>
        </div>
       {Title}<br/>

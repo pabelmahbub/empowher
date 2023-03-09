@@ -38,22 +38,22 @@ function PostBlog() {
       <input {...register("Name", { required: true, maxLength: 50 })} placeholder='Name/ Pseudo Name*'/>
       <input {...register("Location", { required: true, maxLength: 500 })} placeholder='Your Location*'/>
       <input {...register("Old", { required: true, maxLength: 500 })} placeholder='Age*'/>
-      <input {...register("Education", {  required: true, maxLength: 300 })} placeholder="Educated female child(percentage)?*"/>
+      <input {...register("Education", {  required: true, maxLength: 300 })} placeholder="Educated female child(percentage) around you?*"/>
       <input {...register("Fields", {  required: true, maxLength: 300 })} placeholder="Reasons women are not 50/50 in all fields?"/>
       <input {...register("Life", {  required: true, maxLength: 300 })} placeholder="Must needed in women's life/profession?*"/>
       <input {...register("Feel", { required: true, maxLength: 500 })} placeholder='What is your feelings about life?*'/>
       <input {...register("Society", { required: true, maxLength: 500 })} placeholder='what is under appreciated in our society?*'/>
-      <input {...register("Unhappy", { required: true, maxLength: 500 })} placeholder='People are unhappy in surroundings?*'/>
-      <input {...register("Advice", { required: true, maxLength: 500 })} placeholder='Advice to anyone of your age/ junior?*'/>
+      <input {...register("Unhappy", { required: true, maxLength: 500 })} placeholder='Why people are unhappy in surroundings?*'/>
+      <input {...register("Advice", { required: true, maxLength: 500 })} placeholder='Advice to anyone of your age/ junior*'/>
       <input {...register("Change", { required: true, maxLength: 300 })} placeholder="what do you want to change in yourself?*"/>
       <input {...register("Title", { required: true, maxLength: 40 })} placeholder='Title of the interview?*'/>
-      <input {...register("Image", {  maxLength: 1000 })} placeholder="Image URL(if available)"/>
+      <input {...register("Image", {  maxLength: 1000 })} placeholder="Image URL"/>
       {/* <input {...register("Initially", {required: true, maxLength: 70 })} placeholder="Initially what happened?[about 100 words] *"/>
       <textarea {...register("Story")} placeholder='My Story[1000 words]'/>
       <input {...register("Image", {  maxLength: 1000 })} placeholder="Image URL"/> */}
       {/* <input {...register("Lesson", {  maxLength: 300 })} placeholder="what You learned? "/> */}
       
-      <input style={{backgroundColor:'salmon', color:'#fff',fontWeight:'bold',width:'30%'}}type="submit" />
+      <input style={{backgroundColor:'salmon', color:'#fff',fontWeight:'bold',width:'30%', marginTop:'40px'}} type="submit" />
     </form>
     </div>
     </>
