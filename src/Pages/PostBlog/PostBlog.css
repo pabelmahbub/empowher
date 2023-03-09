@@ -28,7 +28,7 @@
 }
 
 .titleStyle {
-    font-size:28px;
+    font-size:25px;
     padding-top: 50px;
     color:#fff;
     text-align: center;
@@ -37,7 +37,7 @@
 }
 
 .titleStyle1 {
-    font-size:28px;
+    font-size:25px;
     padding-top: 50px;
     color:#888;
     text-align: center;
@@ -46,7 +46,7 @@
 }
 
 .bottomText {
-    font-size:20px;
+    font-size:18px;
     color:#fff;
     text-align: center;
     font-weight: 700 ;
@@ -54,7 +54,7 @@
 }
 
 .bottomText1 {
-    font-size:20px;
+    font-size:18px;
     color:#000;
     text-align: center;
     font-weight: 400 ;
