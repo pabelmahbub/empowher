@@ -37,6 +37,18 @@ function Home() {
       <Banner />
       <StepOne />
       <Services />
+
+
+      <amp-ad width="100vw" height="320"
+          type="adsense"
+          data-ad-client="ca-pub-2486580675375362"
+          data-ad-slot="3424802128"
+          data-auto-format="rspv"
+          data-full-width="">
+        <div overflow=""></div>
+      </amp-ad>
+
+
       <ImagesCards />
       <div style={{position:''}}>
          {showComponent && <Contribute />}
