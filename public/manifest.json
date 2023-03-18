@@ -1,6 +1,6 @@
 {
   "short_name": "Blooms Girl",
-  "name": "Blooms Girl-Women empowerment",
+  "name": "Women empowerment App",
   "icons": [
     {
       "src": "favicon.ico",
@@ -13,12 +13,12 @@
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo192.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
-  "start_url": "https://www.bloomsgirl.com/",
+  "start_url": "https://www.bloomsgirl.com",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

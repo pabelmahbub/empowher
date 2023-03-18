@@ -11,6 +11,11 @@ import { Helmet } from 'react-helmet';
 
 function Home() {
   const [showComponent, setShowComponent] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowComponent(true);
@@ -25,7 +30,7 @@ function Home() {
         <title>Blooms Girl home</title>
         <meta 
            name='description'
-           content='women empowerment blog'
+           content='women empowerment app'
          />
       </Helmet>
        

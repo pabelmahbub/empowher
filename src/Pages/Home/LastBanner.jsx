@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import m5 from '../../Assets/34.webp'
 import { Link } from 'react-router-dom';
 
 function LastBanner() {
+
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   return (
      <div className="bg-image" style={{ backgroundImage: `url(${m5})`, marginBottom:'70px' }}>

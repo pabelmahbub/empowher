@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 const Spinner = require('react-spinkit');
 
 function Loading() {
+
+      useEffect(() => {
+            window.scrollTo(0, 0);
+          }, []);
+
   return (
         <div className="flex justify-center items-center h-screen">
               <div className="grid gap-2">

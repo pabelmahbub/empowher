@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './Navbar.css';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider';
@@ -8,6 +8,11 @@ import { FaUserCircle } from 'react-icons/fa';
 function Navbar() {
   const {user, logOut} = useContext(AuthContext);
   console.log('My user', user);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
 const handleLogOut = ()=>{
   logOut()
@@ -77,7 +82,7 @@ const handleLogOut = ()=>{
   </div>
   :
   <div className="navbar-end">
-    {(user?.photoURL) ? <img  style={{height:'26px',borderRadius:'13px',marginRight:'10px'}} roundedCircle src={user?.photoURL} alt="profile-image"/> : <FaUserCircle style={{height:'30',marginRight:'10px'}}/> }
+    {(user?.photoURL) ? <img  style={{height:'26px',borderRadius:'13px',marginRight:'10px'}} roundedCircle src={user?.photoURL} alt="Bloomsgirl profile image"/> : <FaUserCircle style={{height:'30',marginRight:'10px'}}/> }
      
      {/* <p style={{fontFamily:'raleway'}}>Welcome {user?.displayName || user?.email }</p> */}
      <NavLink to='' onClick={handleLogOut} className="text-sm font-bold" style={{backgroundColor:'#fff'}}>LogOut</NavLink>

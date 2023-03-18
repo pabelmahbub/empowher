@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Home.css';
 import { NavLink } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 import m5 from '../../Assets/images/66.webp'
 
 function StepOne() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+
   const services = [{
     _id: 1,
     name: 'Freedom of Girls to speak, freedom to grow and live',
@@ -28,6 +35,13 @@ function StepOne() {
   ]
   return (
     <>
+    <Helmet>
+        <title>Blooms Girl Motto</title>
+        <meta 
+           name='description'
+           content='girls empowerment motto'
+         />
+      </Helmet>
      <h1 className="lg:text-4xl font-bold mt-24 mb-3 text-center lg:mb-[-80px]">WOMEN’S RIGHTS ARE HUMAN RIGHTS!</h1>
     
     

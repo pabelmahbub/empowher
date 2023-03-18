@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
 function OneBlog({ blog }) {
   const {_id, Title, Date, Name, Location, Old, Feel, Unhappy, Advice, Image, Life, Society, Education } = blog;
   
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
+
+      <Helmet>
+        <title>Girl Blog App</title>
+        <meta 
+           name='description'
+           content='women empowerment blog'
+         />
+      </Helmet>
    
 
     <div style={{borderRadius:'8px', borderWidth:1,height:'300px',overflow:'scroll',backgroundColor:'rgb(111, 153, 159)'}} className="card  bg-base-100 shadow-xl">

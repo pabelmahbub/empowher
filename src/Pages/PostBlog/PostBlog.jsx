@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { useForm } from "react-hook-form";
 import Footer from '../Footer/Footer';
@@ -7,6 +7,11 @@ import Navbar from '../Navbar/Navbar';
 import "./PostBlog.css";
 
 function PostBlog() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
          const { register, handleSubmit,reset } = useForm();
          const onSubmit = data => {
                      console.log(data);

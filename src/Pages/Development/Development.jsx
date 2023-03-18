@@ -1,5 +1,5 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
@@ -13,6 +13,10 @@ function Development() {
     const [dataValue, setDataValue] = useState('');
     const [startDate, setStartDate] = useState(new Date());
     const { reset } = useForm();
+
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
   const handleEditorChange = (value) => {
     setEditorValue(value);
@@ -57,7 +61,7 @@ function Development() {
   return (
     <div className='add-service'>
        <Helmet>
-        <title>Blooms Girl development</title>
+        <title>Blooms Girl Blog</title>
         <meta 
            name='description'
            content='women empowerment blog development'

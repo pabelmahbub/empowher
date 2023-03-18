@@ -7,6 +7,11 @@ import Loading from '../Shared/Loading';
 
 
 function DataItem({ htmlString }) {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div dangerouslySetInnerHTML={{ __html: htmlString }} />
   );
@@ -34,7 +39,7 @@ function DevelopmentBlog() {
     .then(res=>res.json())
     .then(data =>{
         const count = data.count;
-        const pages = Math.ceil(count/4);
+        const pages = Math.ceil(count/6);
         setPageCount(pages);
     })
 }, [])

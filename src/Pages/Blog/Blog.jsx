@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 
 function Blog() {
     const [blogs, setBlogs] = useState([])
+    const [myData, setMyData] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
 
@@ -16,6 +17,9 @@ function Blog() {
     const [page, setPage] = useState(0);
     const [size, setSize] = useState(9);
 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
 
     useEffect(() => {
     fetch(`https://empower-server-production.up.railway.app/blogs?page=${page}&size=${size}`)
@@ -23,13 +27,19 @@ function Blog() {
       .then(json => setBlogs(json))
     }, [page,size])
 
+    useEffect(() => {
+      fetch(`https://empower-server-production.up.railway.app/blogs`)
+        .then(response => response.json())
+        .then(json => setMyData(json))
+      }, [])
+
 
     useEffect(() => {
       fetch('https://empower-server-production.up.railway.app/serviceCount')
       .then(res=>res.json())
       .then(data =>{
           const count = data.count;
-          const pages = Math.ceil(count/4);
+          const pages = Math.ceil(count/9);
           setPageCount(pages);
       })
   }, [])
@@ -39,7 +49,7 @@ function Blog() {
 
     const handleSearch = event => {
         setSearchTerm(event.target.value.trim());
-        const filteredResults = blogs.filter(blog => blog.Title.toLowerCase().includes(searchTerm.toLowerCase()) || blog.Location.toLowerCase().includes(searchTerm.toLowerCase()));
+        const filteredResults = myData.filter(blog => blog.Title.toLowerCase().includes(searchTerm.toLowerCase()) || blog.Location.toLowerCase().includes(searchTerm.toLowerCase()));
         setSearchResults(filteredResults);
       };
     

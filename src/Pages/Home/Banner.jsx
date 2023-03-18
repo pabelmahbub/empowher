@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import m5 from '../../Assets/52.avif';
 import './Home.css';
 import { AiOutlineArrowLeft } from 'react-icons/ai';
@@ -6,6 +6,11 @@ import { Link } from 'react-router-dom';
 
 
 function Banner() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
     <div className="hero min-h-screen" style={{ backgroundImage: `url(${m5})`, height:400 }}>

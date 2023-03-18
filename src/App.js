@@ -10,10 +10,6 @@ import { Helmet } from 'react-helmet';
 
 function App() {
 
-
-
-  ReactGA.initialize('G-YNXVWYCYPZ');
-
   return (
     <div className='max-w-7xl mx-auto'>
       <Helmet>
@@ -37,7 +33,6 @@ function App() {
       </Helmet>
 
          <RouterProvider router={router} />
-      
       
     </div>
   );

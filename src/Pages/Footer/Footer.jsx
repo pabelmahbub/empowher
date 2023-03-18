@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 
 function Footer() {
   let year = new Date().getFullYear() 
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
 
     <Helmet>
-        <title>Blooms Girl</title>
+        <title>Blooms Girl Footer</title>
         <meta 
            name='description'
            content='girls app footer'
