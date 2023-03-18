@@ -24,14 +24,6 @@ function Footer() {
   return (
     <>
 
-    <Helmet>
-        <title>Blooms Girl Footer</title>
-        <meta 
-           name='description'
-           content='girls app footer'
-         />
-      </Helmet>
-
     <footer className="footer p-10 bg-neutral text-white">
   <div>
     <span className="footer-title">Services</span> 

@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, Route } from 'react-router-dom';
 import RequiredAuth from '../contexts/RequiredAuth';
 import MainLayout from '../layout/MainLayout';
 import WhatWeDo from '../LinkSections/WhatWeDo';
@@ -20,7 +20,7 @@ export const router = createBrowserRouter([
     children:[
       {path: "/", element: <Home />},
       {path: "/home", element: <Home />},
-      {path: "postBlog",element: <RequiredAuth><PostBlog /></RequiredAuth>},
+      {path: "postBlog",element: <PostBlog />},
       {path: "development",element: <RequiredAuth><Development /></RequiredAuth>},
       {path: "login",element: <Login />},
       {path: "signup",element: <SignUp />},
@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
       loader: async () => { 
         return fetch('https://empower-server-production.up.railway.app/blogs');
       },
-      element: <RequiredAuth><Blog /></RequiredAuth>},
+      element: <Blog />},
 
       {
         path: "singleBlog",
@@ -46,8 +46,10 @@ export const router = createBrowserRouter([
 
       {
         path: "/blogs/:id",
-        element: <RequiredAuth><BlogDetail /></RequiredAuth>},
+        element: <BlogDetail />},
 
 
     
-  ]);
+  ],
+  <Route path="/ads.txt" element={<a href="/ads.txt" download>Download ads.txt file</a>} />
+  );
