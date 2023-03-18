@@ -68,7 +68,7 @@ function ImagesCards() {
             <img src={service.img} style={{height:'350px', width:'400px',objectFit:'fill'}} alt=" blooms girls app"/>
             <Link to={service.path}>
             <div className="card-body">
-               <h2 style={{fontFamily:'raleway'}} className="px-6 card-title">{service.name}</h2>
+               <h2 style={{fontFamily:'raleway', color:'royalblue',fontWeight:'800'}} className="px-6 card-title">{service.name}</h2>
                <p style={{fontFamily:'raleway'}} className='px-6 text-sm'>{service.description}</p>
              </div>
             </Link>
