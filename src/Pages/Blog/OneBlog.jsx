@@ -30,24 +30,27 @@ function OneBlog({ blog }) {
   <div className="card-body">
     <h2 className="card-title">
     <div className="avatar">
+
+       {Image &&
          <div className="w-10 rounded-full">
-          {Image &&
            <img src={Image} alt="blog writer image" />
-          }
           </div>
+        }
        </div>
-      {Title}<br/>
+      {Title}
+       
+       <br/>
       <div className="badge badge-warning">NEW</div>
       
     </h2>
          <p>I am <span style={{color:'#fff', fontWeight:700}}>{Name}, {Old}</span>  years old.</p>
          <p> Location: <span style={{color:'#fff', fontWeight:700}}>{Location}</span></p>
-         <p>In my surroundings educated female child-  <span style={{color:'#fff', fontWeight:700}}>{Education}</span></p>
-         <p>Which area women need more attention? <span style={{color:'#fff', fontWeight:700}}>{Life}</span></p>
-         <p>My feel about society is: <span style={{color:'#fff', fontWeight:700}}>{Unhappy}</span></p>
-         <p>Any advice to anyone of your age?  - <span style={{color:'#fff', fontWeight:700}}>{Advice}</span> </p>
-         <p>What is needed in our society most: <span style={{color:'#fff', fontWeight:700}}>{Society}</span></p>
-         <p>what does it look like in your age?- <span style={{color:'#fff', fontWeight:700}}>{Feel}</span> </p>
+         <p>In my surroundings educated female child -  <span style={{color:'#fff', fontWeight:700}}>{Education}</span></p>
+         <p>Women need more attention - <span style={{color:'#fff', fontWeight:700}}>{Life}</span></p>
+         <p>My feel about society is - <span style={{color:'#fff', fontWeight:700}}>{Unhappy}</span></p>
+         <p>Advice to anyone of my age - <span style={{color:'#fff', fontWeight:700}}>{Advice}</span> </p>
+         <p>Our society needed -  <span style={{color:'#fff', fontWeight:700}}>{Society}</span></p>
+         <p>It looks like in my age - <span style={{color:'#fff', fontWeight:700}}>{Feel}</span> </p>
          <span style={{color:'#230',fontSize:'11px'}}>{Date}</span>
     
         {/* <div className="card-actions justify-end">

@@ -50,7 +50,7 @@ const handleLogOut = ()=>{
 
       </ul>
     </div>
-    <Link to='/' className="btn btn-ghost normal-case" style={{fontFamily:'raleway',fontSize:'30px', color:'tomato',fontWeight:900}}>B<span style={{textDecoration:'underline',fontSize:"20px"}}>looms Girl</span></Link>
+    <Link to='/' className="btn btn-ghost normal-case" style={{fontSize:'30px', color:'tomato',fontWeight:900}}>B<span style={{textDecoration:'underline',fontSize:"20px"}}>looms Girl</span></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -76,7 +76,7 @@ const handleLogOut = ()=>{
 
     </ul>
   </div>
-  {(!user) ?
+  {!user ?
   <div className="navbar-end">
     <NavLink to='/signup'  className="btn text-sm" style={{borderColor:'none', borderRadius:'4px'}}>Let's Start!</NavLink>
   </div>

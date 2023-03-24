@@ -40,9 +40,9 @@ function BlogDetail() {
        <p style={{color:'#fff'}} className="text-2xl font-bold blogDetail pb-2">Hi, I am {data.Name}</p>
        <p style={{color:'#fff'}} className="text-md blogDetail">Location: {data.Location}</p>
        <p style={{color:'#fff'}} className="text-md blogDetail">I am {data.Old} years old.</p>
-       <p style={{color:'#fff'}} className="text-md blogDetail pb-2">In my surroundings educated female child-  {data.Education} .</p>
+       <p style={{color:'#fff'}} className="text-md blogDetail pb-2">In my surroundings percentage of educated female child -  {data.Education} .</p>
        {data.Fields && 
-       <p style={{color:'#fff',whiteSpace:'initial'}} className="text-md blogDetail">What are the reasons women are not 50/50 in all fields- {data.Fields} .</p>
+       <p style={{color:'#fff',whiteSpace:'initial'}} className="text-md blogDetail">Reasons women are not 50/50 in all sectors of my society- {data.Fields} .</p>
         } 
        {data.Life && 
        <p style={{color:'#fff'}} className="text-md blogDetail">Women need more attention in- {data.Life} .</p>
